@@ -162,7 +162,7 @@ function KontaktPage() {
         <div className="h-80 w-full overflow-hidden rounded-xl ring-1 ring-border sm:h-96">
           <iframe
             title="Praxisstandort auf Google Maps"
-            src="https://www.google.com/maps?q=Hauptstra%C3%9Fe+42,+10115+Berlin&t=m&z=16&ie=UTF8&iwloc=&output=embed"
+            src="https://www.google.com/maps?q=Maurepasstr.+74,+24558+Henstedt-Ulzburg&t=m&z=16&ie=UTF8&iwloc=&output=embed"
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -173,7 +173,7 @@ function KontaktPage() {
         </div>
         <p className="mt-2 text-center text-xs text-muted-foreground">
           <a
-            href="https://www.google.com/maps/search/?api=1&query=Hauptstra%C3%9Fe+42,+10115+Berlin"
+            href="https://www.google.com/maps/search/?api=1&query=Maurepasstr.+74,+24558+Henstedt-Ulzburg"
             target="_blank"
             rel="noopener noreferrer"
             className="underline underline-offset-2 transition-colors hover:text-foreground"

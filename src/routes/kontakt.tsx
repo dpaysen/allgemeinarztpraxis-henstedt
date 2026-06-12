@@ -4,9 +4,9 @@ export const Route = createFileRoute("/kontakt")({
   head: () => ({
     meta: [
       { title: "Kontakt — Praxis Dr. Müller" },
-      { name: "description", content: "So erreichen Sie uns: Adresse, Telefon, E-Mail und Öffnungszeiten der Allgemeinarztpraxis Dr. Müller in Berlin." },
+      { name: "description", content: "So erreichen Sie uns: Adresse, Telefon, E-Mail und Öffnungszeiten der Allgemeinarztpraxis Dr. Müller in Henstedt-Ulzburg." },
       { property: "og:title", content: "Kontakt — Praxis Dr. Müller" },
-      { property: "og:description", content: "Kontakt & Öffnungszeiten der Allgemeinarztpraxis Dr. Müller in Berlin." },
+      { property: "og:description", content: "Kontakt & Öffnungszeiten der Allgemeinarztpraxis Dr. Müller in Henstedt-Ulzburg." },
     ],
   }),
   component: KontaktPage,
@@ -50,9 +50,9 @@ function KontaktPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
                 </svg>
                 <span>
-                  Hauptstraße 42
+                  Maurepasstr. 74
                   <br />
-                  10115 Berlin
+                  24558 Henstedt-Ulzburg
                 </span>
               </p>
               <p className="flex items-center gap-3">
@@ -87,26 +87,26 @@ function KontaktPage() {
             </address>
           </div>
 
-          {/* Public transport */}
+          {/* Public transport / Anfahrt */}
           <div className="rounded-xl bg-card p-6 ring-1 ring-border">
             <h3 className="text-base font-semibold text-foreground">Anfahrt</h3>
             <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 inline-block h-2 w-2 shrink-0 rounded-full bg-primary" />
                 <span>
-                  <strong className="text-foreground">U-Bahn:</strong> U2/U8 Alexanderplatz (5 Min. Fußweg)
+                  <strong className="text-foreground">Auto:</strong> Über die A7 (Ausfahrt Henstedt-Ulzburg) oder B433 erreichbar
                 </span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 inline-block h-2 w-2 shrink-0 rounded-full bg-primary" />
                 <span>
-                  <strong className="text-foreground">S-Bahn:</strong> S5/S7/S75 Alexanderplatz
+                  <strong className="text-foreground">Bus:</strong> HVV-Buslinien in Henstedt-Ulzburg
                 </span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 inline-block h-2 w-2 shrink-0 rounded-full bg-primary" />
                 <span>
-                  <strong className="text-foreground">Bus:</strong> Linie 100, 200 — Haltestelle Am Friedrichstadt-Palast
+                  <strong className="text-foreground">Bahn:</strong> S-Bahn und AKN nach Henstedt-Ulzburg
                 </span>
               </li>
             </ul>
@@ -162,7 +162,7 @@ function KontaktPage() {
         <div className="h-80 w-full overflow-hidden rounded-xl ring-1 ring-border sm:h-96">
           <iframe
             title="Praxisstandort auf Google Maps"
-            src="https://www.google.com/maps?q=Hauptstra%C3%9Fe+42,+10115+Berlin&t=m&z=16&ie=UTF8&iwloc=&output=embed"
+            src="https://www.google.com/maps?q=Maurepasstr.+74,+24558+Henstedt-Ulzburg&t=m&z=16&ie=UTF8&iwloc=&output=embed"
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -173,7 +173,7 @@ function KontaktPage() {
         </div>
         <p className="mt-2 text-center text-xs text-muted-foreground">
           <a
-            href="https://www.google.com/maps/search/?api=1&query=Hauptstra%C3%9Fe+42,+10115+Berlin"
+            href="https://www.google.com/maps/search/?api=1&query=Maurepasstr.+74,+24558+Henstedt-Ulzburg"
             target="_blank"
             rel="noopener noreferrer"
             className="underline underline-offset-2 transition-colors hover:text-foreground"

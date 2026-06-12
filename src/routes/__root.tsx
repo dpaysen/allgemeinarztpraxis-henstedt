@@ -138,7 +138,7 @@ function Footer() {
               Praxis Dr. Müller
             </div>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-              Ihre Allgemeinarztpraxis in der Innenstadt. Persönliche Betreuung
+              Ihre Allgemeinarztpraxis in Henstedt-Ulzburg. Persönliche Betreuung
               und moderne Medizin seit 2005.
             </p>
           </div>
@@ -174,8 +174,8 @@ function Footer() {
           <div>
             <h3 className="text-sm font-semibold text-foreground">Kontakt</h3>
             <address className="mt-3 space-y-2 text-sm not-italic text-muted-foreground">
-              <p>Hauptstraße 42</p>
-              <p>10115 Berlin</p>
+              <p>Maurepasstr. 74</p>
+              <p>24558 Henstedt-Ulzburg</p>
               <p>
                 Tel:{" "}
                 <a href="tel:+4930123456789" className="underline underline-offset-4 transition-colors hover:text-foreground">
@@ -275,11 +275,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Praxis Dr. Müller — Allgemeinmedizin in Berlin" },
-      { name: "description", content: "Ihre Allgemeinarztpraxis in Berlin-Mitte. Hausärztliche Versorgung, Vorsorge, chronische Erkrankungen und mehr. Termine online vereinbaren." },
+      { title: "Praxis Dr. Müller — Allgemeinmedizin in Henstedt-Ulzburg" },
+      { name: "description", content: "Ihre Allgemeinarztpraxis in Henstedt-Ulzburg. Hausärztliche Versorgung, Vorsorge, chronische Erkrankungen und mehr. Termine online vereinbaren." },
       { name: "author", content: "Praxis Dr. Müller" },
-      { property: "og:title", content: "Praxis Dr. Müller — Allgemeinmedizin in Berlin" },
-      { property: "og:description", content: "Ihre Allgemeinarztpraxis in Berlin-Mitte. Hausärztliche Versorgung, Vorsorge, chronische Erkrankungen und mehr." },
+      { property: "og:title", content: "Praxis Dr. Müller — Allgemeinmedizin in Henstedt-Ulzburg" },
+      { property: "og:description", content: "Ihre Allgemeinarztpraxis in Henstedt-Ulzburg. Hausärztliche Versorgung, Vorsorge, chronische Erkrankungen und mehr." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@PraxisDrMueller" },

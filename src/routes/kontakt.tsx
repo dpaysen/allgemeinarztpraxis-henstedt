@@ -157,27 +157,30 @@ function KontaktPage() {
         </div>
       </div>
 
-      {/* Map placeholder */}
+      {/* Google Maps */}
       <div className="mt-8">
-        <div className="flex h-80 w-full items-center justify-center overflow-hidden rounded-xl bg-muted ring-1 ring-border sm:h-96">
-          <div className="text-center">
-            <svg className="mx-auto h-12 w-12 text-muted-foreground" fill="none" stroke="currentColor" strokeWidth="1" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-              <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-            </svg>
-            <p className="mt-3 text-sm text-muted-foreground">
-              Kartenansicht: Hauptstraße 42, 10115 Berlin
-            </p>
-            <a
-              href="https://www.google.com/maps/search/?api=1&query=Hauptstraße+42,+10115+Berlin"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-2 inline-flex items-center justify-center rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-teal-dark"
-            >
-              In Google Maps öffnen
-            </a>
-          </div>
+        <div className="h-80 w-full overflow-hidden rounded-xl ring-1 ring-border sm:h-96">
+          <iframe
+            title="Praxisstandort auf Google Maps"
+            src="https://www.google.com/maps?q=Hauptstra%C3%9Fe+42,+10115+Berlin&t=m&z=16&ie=UTF8&iwloc=&output=embed"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
         </div>
+        <p className="mt-2 text-center text-xs text-muted-foreground">
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Hauptstra%C3%9Fe+42,+10115+Berlin"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-2 transition-colors hover:text-foreground"
+          >
+            Größere Karte anzeigen
+          </a>
+        </p>
       </div>
     </div>
   );

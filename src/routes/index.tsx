@@ -4,10 +4,10 @@ import heroImage from "@/assets/praxis-hero.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Praxis Dr. Müller — Ihr Allgemeinarzt in Berlin" },
-      { name: "description", content: "Willkommen in der Allgemeinarztpraxis Dr. Müller in Berlin-Mitte. Hausärztliche Versorgung, Vorsorge und moderne Medizin." },
-      { property: "og:title", content: "Praxis Dr. Müller — Ihr Allgemeinarzt in Berlin" },
-      { property: "og:description", content: "Willkommen in der Allgemeinarztpraxis Dr. Müller in Berlin-Mitte." },
+      { title: "Praxis Dr. Müller — Ihr Allgemeinarzt in Henstedt-Ulzburg" },
+      { name: "description", content: "Willkommen in der Allgemeinarztpraxis Dr. Müller in Henstedt-Ulzburg. Hausärztliche Versorgung, Vorsorge und moderne Medizin." },
+      { property: "og:title", content: "Praxis Dr. Müller — Ihr Allgemeinarzt in Henstedt-Ulzburg" },
+      { property: "og:description", content: "Willkommen in der Allgemeinarztpraxis Dr. Müller in Henstedt-Ulzburg." },
       { property: "og:type", content: "website" },
     ],
   }),
@@ -40,8 +40,8 @@ function IndexPage() {
               <span className="text-primary">besten Händen</span>
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              Willkommen in der Praxis Dr. Müller — Ihrer Allgemeinarztpraxis im
-              Herzen von Berlin. Wir bieten Ihnen umfassende hausärztliche
+              Willkommen in der Praxis Dr. Müller — Ihrer Allgemeinarztpraxis in
+              Henstedt-Ulzburg. Wir bieten Ihnen umfassende hausärztliche
               Versorgung mit persönlicher Betreuung und modernster Medizin.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">

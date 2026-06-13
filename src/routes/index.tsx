@@ -202,10 +202,10 @@ function IndexPage() {
             Termin vereinbaren
           </Link>
           <a
-            href="tel:+4930123456789"
+            href="tel:+4941935029990"
             className="inline-flex items-center justify-center rounded-lg border border-primary-foreground/30 px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary-foreground/10"
           >
-            030 123 456 789
+            04193 5029990
           </a>
         </div>
       </section>

@@ -3,10 +3,10 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 export const Route = createFileRoute("/leistungen")({
   head: () => ({
     meta: [
-      { title: "Leistungen — Praxis Dr. Müller" },
+      { title: "Leistungen — Allgemeinarztpraxis Henstedt" },
       { name: "description", content: "Unser Leistungsspektrum: Vorsorge, chronische Erkrankungen, Akutversorgung, Labor, Impfungen und mehr." },
-      { property: "og:title", content: "Leistungen — Praxis Dr. Müller" },
-      { property: "og:description", content: "Unser Leistungsspektrum in der Allgemeinarztpraxis Dr. Müller." },
+      { property: "og:title", content: "Leistungen — Allgemeinarztpraxis Henstedt" },
+      { property: "og:description", content: "Unser Leistungsspektrum in der Allgemeinarztpraxis Henstedt." },
     ],
   }),
   component: LeistungenPage,

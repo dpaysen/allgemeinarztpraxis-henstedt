@@ -4,10 +4,10 @@ import doctorImage from "@/assets/doctor-portrait.jpg";
 export const Route = createFileRoute("/team")({
   head: () => ({
     meta: [
-      { title: "Team — Praxis Dr. Müller" },
-      { name: "description", content: "Lernen Sie Dr. Klaus Müller und sein Praxisteam kennen. Erfahren, freundlich und immer für Sie da." },
-      { property: "og:title", content: "Team — Praxis Dr. Müller" },
-      { property: "og:description", content: "Lernen Sie Dr. Klaus Müller und sein Praxisteam kennen." },
+      { title: "Team — Allgemeinarztpraxis Henstedt" },
+      { name: "description", content: "Lernen Sie Heiko Bahnsen, Danny Paysen und ihr Praxisteam kennen. Erfahren, freundlich und immer für Sie da." },
+      { property: "og:title", content: "Team — Allgemeinarztpraxis Henstedt" },
+      { property: "og:description", content: "Lernen Sie Heiko Bahnsen, Danny Paysen und ihr Praxisteam kennen." },
     ],
   }),
   component: TeamPage,
@@ -15,11 +15,18 @@ export const Route = createFileRoute("/team")({
 
 const team = [
   {
-    name: "Dr. Klaus Müller",
+    name: "Heiko Bahnsen",
     role: "Facharzt für Allgemeinmedizin",
-    bio: "Dr. Müller ist seit 2005 als Hausarzt in Berlin tätig. Nach seinem Studium an der Charité und seiner Facharztweiterbildung hat er sich auf chronische Erkrankungen und Vorsorgemedizin spezialisiert.",
+    bio: "Heiko Bahnsen ist als Hausarzt in Henstedt-Ulzburg tätig. Nach seinem Studium und der Facharztweiterbildung hat er sich auf chronische Erkrankungen und Vorsorgemedizin spezialisiert.",
     image: doctorImage,
     focus: ["Chronische Erkrankungen", "Vorsorge", "Geriatrie"],
+  },
+  {
+    name: "Danny Paysen",
+    role: "Facharzt für Allgemeinmedizin",
+    bio: "Danny Paysen ergänzt das Ärzteteam mit langjähriger Erfahrung in der Allgemeinmedizin. Sein Schwerpunkt liegt in der Akutversorgung und der Betreuung von Patienten aller Altersgruppen.",
+    image: undefined,
+    focus: ["Akutversorgung", "Innere Medizin", "Kinder- und Jugendmedizin"],
   },
   {
     name: "Sarah Weber",

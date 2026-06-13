@@ -3,10 +3,10 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 export const Route = createFileRoute("/kontakt")({
   head: () => ({
     meta: [
-      { title: "Kontakt — Praxis Dr. Müller" },
-      { name: "description", content: "So erreichen Sie uns: Adresse, Telefon, E-Mail und Öffnungszeiten der Allgemeinarztpraxis Dr. Müller in Henstedt-Ulzburg." },
-      { property: "og:title", content: "Kontakt — Praxis Dr. Müller" },
-      { property: "og:description", content: "Kontakt & Öffnungszeiten der Allgemeinarztpraxis Dr. Müller in Henstedt-Ulzburg." },
+      { title: "Kontakt — Allgemeinarztpraxis Henstedt" },
+      { name: "description", content: "So erreichen Sie uns: Adresse, Telefon, E-Mail und Öffnungszeiten der Allgemeinarztpraxis Henstedt in Henstedt-Ulzburg." },
+      { property: "og:title", content: "Kontakt — Allgemeinarztpraxis Henstedt" },
+      { property: "og:description", content: "Kontakt & Öffnungszeiten der Allgemeinarztpraxis Henstedt in Henstedt-Ulzburg." },
     ],
   }),
   component: KontaktPage,
@@ -41,7 +41,7 @@ function KontaktPage() {
         <div className="space-y-6">
           <div className="rounded-xl bg-card p-6 ring-1 ring-border">
             <h2 className="text-lg font-semibold text-foreground">
-              Praxis Dr. Klaus Müller
+              Allgemeinarztpraxis Henstedt
             </h2>
             <address className="mt-4 space-y-3 text-sm not-italic text-muted-foreground">
               <p className="flex items-start gap-3">
@@ -76,12 +76,12 @@ function KontaktPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.485 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.052 0-3.99.518-5.661 1.422m11.322 0a9.004 9.004 0 01-5.661 1.422M6.25 12a9.004 9.004 0 0111.322 0" />
                 </svg>
                 <a
-                  href="https://www.praxis-drmueller.de"
+                  href="mailto:praxis@allgemeinarztpraxis-henstedt.de"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline underline-offset-4 transition-colors hover:text-foreground"
                 >
-                  www.praxis-drmueller.de
+                  praxis@allgemeinarztpraxis-henstedt.de
                 </a>
               </p>
             </address>

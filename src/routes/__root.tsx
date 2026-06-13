@@ -41,7 +41,7 @@ function Navigation() {
           >
             <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
           </svg>
-          Praxis Dr. Müller
+          Allgemeinarztpraxis Henstedt
         </Link>
 
         {/* Desktop nav */}
@@ -135,11 +135,11 @@ function Footer() {
               >
                 <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
               </svg>
-              Praxis Dr. Müller
+              Allgemeinarztpraxis Henstedt
             </div>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
               Ihre Allgemeinarztpraxis in Henstedt-Ulzburg. Persönliche Betreuung
-              und moderne Medizin seit 2005.
+              und moderne Medizin.
             </p>
           </div>
 
@@ -184,8 +184,8 @@ function Footer() {
               </p>
               <p>
                 E-Mail:{" "}
-                <a href="mailto:praxis@drmueller.de" className="underline underline-offset-4 transition-colors hover:text-foreground">
-                  praxis@drmueller.de
+                <a href="mailto:praxis@allgemeinarztpraxis-henstedt.de" className="underline underline-offset-4 transition-colors hover:text-foreground">
+                  praxis@allgemeinarztpraxis-henstedt.de
                 </a>
               </p>
             </address>
@@ -194,7 +194,7 @@ function Footer() {
 
         <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-border pt-6 sm:flex-row">
           <p className="text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} Praxis Dr. Müller. Alle Rechte vorbehalten.
+            &copy; {new Date().getFullYear()} Allgemeinarztpraxis Henstedt. Alle Rechte vorbehalten.
           </p>
           <p className="text-xs text-muted-foreground">
             Arztpraxis — Kein Ersatz für den Notruf 112
@@ -275,14 +275,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Praxis Dr. Müller — Allgemeinmedizin in Henstedt-Ulzburg" },
+      { title: "Allgemeinarztpraxis Henstedt — Allgemeinmedizin in Henstedt-Ulzburg" },
       { name: "description", content: "Ihre Allgemeinarztpraxis in Henstedt-Ulzburg. Hausärztliche Versorgung, Vorsorge, chronische Erkrankungen und mehr. Termine online vereinbaren." },
-      { name: "author", content: "Praxis Dr. Müller" },
-      { property: "og:title", content: "Praxis Dr. Müller — Allgemeinmedizin in Henstedt-Ulzburg" },
+      { name: "author", content: "Allgemeinarztpraxis Henstedt" },
+      { property: "og:title", content: "Allgemeinarztpraxis Henstedt — Allgemeinmedizin in Henstedt-Ulzburg" },
       { property: "og:description", content: "Ihre Allgemeinarztpraxis in Henstedt-Ulzburg. Hausärztliche Versorgung, Vorsorge, chronische Erkrankungen und mehr." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@PraxisDrMueller" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },

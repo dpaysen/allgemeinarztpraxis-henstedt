@@ -4,10 +4,10 @@ import heroImage from "@/assets/praxis-hero.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Praxis Dr. Müller — Ihr Allgemeinarzt in Henstedt-Ulzburg" },
-      { name: "description", content: "Willkommen in der Allgemeinarztpraxis Dr. Müller in Henstedt-Ulzburg. Hausärztliche Versorgung, Vorsorge und moderne Medizin." },
-      { property: "og:title", content: "Praxis Dr. Müller — Ihr Allgemeinarzt in Henstedt-Ulzburg" },
-      { property: "og:description", content: "Willkommen in der Allgemeinarztpraxis Dr. Müller in Henstedt-Ulzburg." },
+      { title: "Allgemeinarztpraxis Henstedt — Ihr Allgemeinarzt in Henstedt-Ulzburg" },
+      { name: "description", content: "Willkommen in der Allgemeinarztpraxis Henstedt in Henstedt-Ulzburg. Hausärztliche Versorgung, Vorsorge und moderne Medizin." },
+      { property: "og:title", content: "Allgemeinarztpraxis Henstedt — Ihr Allgemeinarzt in Henstedt-Ulzburg" },
+      { property: "og:description", content: "Willkommen in der Allgemeinarztpraxis Henstedt in Henstedt-Ulzburg." },
       { property: "og:type", content: "website" },
     ],
   }),
@@ -40,8 +40,8 @@ function IndexPage() {
               <span className="text-primary">besten Händen</span>
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              Willkommen in der Praxis Dr. Müller — Ihrer Allgemeinarztpraxis in
-              Henstedt-Ulzburg. Wir bieten Ihnen umfassende hausärztliche
+              Willkommen in der Allgemeinarztpraxis Henstedt — Ihrer
+              Allgemeinarztpraxis in Henstedt-Ulzburg. Wir bieten Ihnen umfassende hausärztliche
               Versorgung mit persönlicher Betreuung und modernster Medizin.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
@@ -94,11 +94,11 @@ function IndexPage() {
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-12 px-6 py-20 lg:flex-row">
           <div className="flex-1">
             <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-              Persönliche Betreuung seit 2005
+              Persönliche Betreuung
             </h2>
             <p className="mt-4 leading-relaxed text-muted-foreground">
-              In unserer Praxis stehen Sie als Patient im Mittelpunkt. Dr. Müller
-              und sein Team nehmen sich Zeit für Ihre Anliegen und begleiten Sie
+              In unserer Praxis stehen Sie als Patient im Mittelpunkt. Heiko Bahnsen,
+              Danny Paysen und ihr Team nehmen sich Zeit für Ihre Anliegen und begleiten Sie
               kompetent auf dem Weg zu mehr Gesundheit und Wohlbefinden.
             </p>
             <p className="mt-4 leading-relaxed text-muted-foreground">

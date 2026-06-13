@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import heroImage from "@/assets/praxis-hero.jpg";
+import heroAsset from "@/assets/praxis-henstedt.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -21,7 +21,7 @@ function IndexPage() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src={heroImage}
+            src={heroAsset.url}
             alt="Moderne Arztpraxis mit natürlichem Licht"
             className="h-full w-full object-cover"
             width={1920}

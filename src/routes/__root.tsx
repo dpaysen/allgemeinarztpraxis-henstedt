@@ -184,8 +184,8 @@ function Footer() {
               </p>
               <p>
                 E-Mail:{" "}
-                <a href="mailto:praxis@drmueller.de" className="underline underline-offset-4 transition-colors hover:text-foreground">
-                  praxis@drmueller.de
+                <a href="mailto:praxis@allgemeinarztpraxis-henstedt.de" className="underline underline-offset-4 transition-colors hover:text-foreground">
+                  praxis@allgemeinarztpraxis-henstedt.de
                 </a>
               </p>
             </address>

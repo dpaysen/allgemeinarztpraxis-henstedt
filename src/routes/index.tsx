@@ -36,8 +36,8 @@ function IndexPage() {
               Allgemeinmedizin & Hausärztliche Versorgung
             </span>
             <h1 className="mt-6 text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-              Ihre Gesundheit in{" "}
-              <span className="text-primary">besten Händen</span>
+              Da sein, wenn es{" "}
+              <span className="text-primary">darauf ankommt</span>
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
               Willkommen in der Allgemeinarztpraxis Henstedt — Ihrer

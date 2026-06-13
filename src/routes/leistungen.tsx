@@ -14,44 +14,66 @@ export const Route = createFileRoute("/leistungen")({
 
 const services = [
   {
-    title: "Vorsorge & Gesundheits-Check-ups",
+    title: "Gesundheits- und Vorsorgeuntersuchungen",
     description:
-      "Regelmäßige Vorsorgeuntersuchungen sind die Basis für langfristige Gesundheit. Wir bieten Check-ups ab 35, Krebsvorsorge, Impfberatung und individuelle Gesundheitspläne.",
+      "Vorbeugen ist besser als heilen. Wir unterstützen Sie dabei, Ihre Gesundheit aktiv zu schützen.",
+    items: [
+      "Gesundheitsuntersuchung für Frauen und Männer",
+      "Hautkrebsscreening",
+      "Krebsvorsorge für Männer",
+      "Jugendgesundheitsuntersuchung",
+      "Jugendarbeitsschutzuntersuchungen",
+      "Impfberatung und Impfungen",
+    ],
   },
   {
-    title: "Chronische Erkrankungen",
+    title: "Disease Management Programme (DMP)",
     description:
-      "Bei Diabetes, Bluthochdruck, Asthma, COPD und anderen chronischen Erkrankungen begleiten wir Sie kontinuierlich und passen Ihre Behandlung individuell an.",
+      "Chronische Erkrankungen brauchen kontinuierliche Aufmerksamkeit. In unseren DMP-Programmen begleiten wir Sie medizinisch und menschlich – strukturiert, fundiert und verlässlich.",
+    items: [
+      "Diabetes mellitus Typ II",
+      "Koronare Herzkrankheit (KHK)",
+      "Asthma bronchiale",
+      "Chronisch obstruktive Lungenerkrankung (COPD)",
+      "Osteoporose",
+    ],
   },
   {
-    title: "Akutversorgung",
+    title: "Technische Untersuchungen",
     description:
-      "Bei plötzlichen Beschwerden wie Fieber, Infekten, Schmerzen oder Verletzungen bieten wir kurzfristige Termine und eine schnelle Erstversorgung.",
+      "Moderne Technik für präzise Diagnosen. Mit aktueller Ausstattung unterstützen wir die ärztliche Einschätzung durch aussagekräftige Untersuchungen.",
+    items: [
+      "Laboruntersuchungen",
+      "Sonographie (Ultraschall)",
+      "Lungenfunktionsprüfung",
+      "EKG und Belastungs-EKG (Ergometrie)",
+    ],
   },
   {
-    title: "Labor & Diagnostik",
+    title: "Individuelle Gesundheitsleistungen (IGeL)",
     description:
-      "Blutentnahme, Urinuntersuchungen, EKG, Lungenfunktionstests und weitere diagnostische Verfahren führen wir direkt in unserer Praxis durch.",
+      "Mehr Klarheit für Ihre Gesundheit. Diese freiwilligen Zusatzangebote ermöglichen Ihnen einen noch tieferen Einblick in Ihre gesundheitliche Situation.",
+    items: [
+      "Umfassender Gesundheitscheck inkl. Labor, EKG und Ultraschall (Schilddrüse und Oberbauch)",
+      "Schilddrüsencheck",
+      "Reiseimpfberatung und Reiseimpfungen",
+      "Vitaminaufbauspritzen",
+      "Hörtest",
+      "Sehtest",
+    ],
   },
   {
-    title: "Impfungen",
+    title: "Untersuchung für Atemschutzgeräteträger der Feuerwehr",
     description:
-      "Wir beraten Sie umfassend zu allen empfohlenen Impfungen für Kinder und Erwachsene und führen die Impfungen direkt in der Praxis durch.",
-  },
-  {
-    title: "Reisemedizin",
-    description:
-      "Vor Ihrer Reise beraten wir Sie zu notwendigen Impfungen und Vorbeugemaßnahmen für Ihr Reiseziel und stellen Ihnen ein Reiseapotheke zusammen.",
-  },
-  {
-    title: "Geriatrie & Altersmedizin",
-    description:
-      "Besondere Aufmerksamkeit für ältere Patienten: Medikamentenmanagement, Sturzprophylaxe, Gedächtnisleistung und Koordination der Versorgung.",
-  },
-  {
-    title: "Hausärztliche Betreuung",
-    description:
-      "Als Ihr Hausarzt sind wir Ihr erster Ansprechpartner bei allen gesundheitlichen Fragen und koordinieren gegebenenfalls die Überweisung zu Fachärzten.",
+      "Sicher im Einsatz: Wir führen die gesetzlich vorgeschriebene Eignungsuntersuchung nach G26.3 für Mitglieder der Freiwilligen Feuerwehr direkt bei uns in der Praxis durch.",
+    items: [
+      "Ärztliches Gespräch und körperliche Untersuchung",
+      "Blutabnahme",
+      "Belastungs-EKG (Ergometrie)",
+      "Lungenfunktionsprüfung",
+      "Sehtest",
+      "Hörtest",
+    ],
   },
 ];
 
@@ -60,12 +82,15 @@ function LeistungenPage() {
     <div className="mx-auto max-w-6xl px-6 py-16">
       {/* Header */}
       <div className="text-center">
-        <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-          Unsere Leistungen
+        <p className="text-sm font-medium uppercase tracking-wide text-primary">Unsere Leistungen</p>
+        <h1 className="mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+          So individuell wie Ihre Gesundheit und so umfassend wie Ihr Körper.
         </h1>
-        <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-          Ein breites Spektrum moderner hausärztlicher Versorgung für Ihre
-          Gesundheit — persönlich, kompetent und auf Augenhöhe.
+        <p className="mx-auto mt-4 max-w-3xl text-muted-foreground">
+          In unserer Hausarztpraxis steht der Mensch im Mittelpunkt – mit all seinen
+          gesundheitlichen Fragen, Bedürfnissen und Lebensphasen. Ob Vorsorge, akute
+          Beschwerden oder langfristige Begleitung: Wir bieten medizinische Versorgung
+          auf hohem fachlichen Niveau – mit Zeit, Ruhe und einem offenen Ohr.
         </p>
       </div>
 
@@ -87,6 +112,14 @@ function LeistungenPage() {
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
               {service.description}
             </p>
+            <ul className="mt-4 space-y-1.5 text-sm text-foreground">
+              {service.items.map((item) => (
+                <li key={item} className="flex items-start gap-2">
+                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         ))}
       </div>

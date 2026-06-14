@@ -20,11 +20,11 @@ function ImpressumPage() {
       <section className="mt-10">
         <h2 className="text-xl font-semibold text-foreground">Impressum</h2>
         <div className="mt-4 space-y-2 text-sm leading-relaxed text-muted-foreground">
-          <p><strong>Allgemeinarztpraxis Henstedt</strong></p>
+          <p><strong>Allgemeinarztpraxis Henstedt<br />Heiko Bahnsen und Danny Paysen</strong></p>
           <p>Maurepasstr. 74</p>
           <p>24558 Henstedt-Ulzburg</p>
-          <p>Tel.: 04193 5029990</p>
-          <p>Fax: 04193 5029999</p>
+          <p>Telefon: 04193-5029990</p>
+          <p>Fax: 04193-5029999</p>
         </div>
       </section>
 
@@ -40,7 +40,7 @@ function ImpressumPage() {
         <h2 className="text-xl font-semibold text-foreground">Berufsrechtliche Angaben</h2>
         <div className="mt-4 space-y-2 text-sm leading-relaxed text-muted-foreground">
           <p>Ärztekammer Schleswig-Holstein</p>
-          <p>Bergstraße 64, 23669 Timmendorfer Strand</p>
+          <p>Bismarckallee 8-12, 23795 Bad Segeberg</p>
           <p>
             <a href="https://www.aeksh.de" className="underline underline-offset-4 hover:text-foreground" target="_blank" rel="noopener noreferrer">
               www.aeksh.de

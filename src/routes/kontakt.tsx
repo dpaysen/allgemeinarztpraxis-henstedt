@@ -13,10 +13,10 @@ export const Route = createFileRoute("/kontakt")({
 });
 
 const hours = [
-  { day: "Montag", morning: "8:00 – 12:00", afternoon: "15:00 – 18:00" },
-  { day: "Dienstag", morning: "8:00 – 12:00", afternoon: "15:00 – 18:00" },
+  { day: "Montag", morning: "8:00 – 12:00", afternoon: "13:00 – 15:30" },
+  { day: "Dienstag", morning: "8:00 – 12:00", afternoon: "13:00 – 15:30" },
   { day: "Mittwoch", morning: "8:00 – 12:00", afternoon: "Geschlossen" },
-  { day: "Donnerstag", morning: "8:00 – 12:00", afternoon: "15:00 – 18:00" },
+  { day: "Donnerstag", morning: "8:00 – 12:00", afternoon: "15:30 – 18:00" },
   { day: "Freitag", morning: "8:00 – 12:00", afternoon: "Geschlossen" },
   { day: "Samstag", morning: "Nach Vereinbarung", afternoon: "" },
   { day: "Sonntag", morning: "Geschlossen", afternoon: "" },

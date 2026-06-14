@@ -94,6 +94,34 @@ function NotdienstPage() {
               116117.de
             </a>
           </p>
+
+          <div className="mt-6 rounded-lg bg-accent/50 p-4">
+            <p className="text-sm font-semibold text-foreground">
+              Paracelsus Klinik in Henstedt-Ulzburg
+            </p>
+            <p className="text-xs text-muted-foreground">(nur Erwachsene)</p>
+            <p className="mt-1 text-sm text-muted-foreground">
+              Wilstedter Straße 134<br />
+              24558 Henstedt-Ulzburg
+            </p>
+            <p className="mt-2 text-sm font-medium text-foreground">
+              Rund um die Uhr geöffnet
+            </p>
+
+            <div className="mt-3 border-t border-border pt-3">
+              <p className="text-sm font-semibold text-foreground">
+                Öffnungszeiten der Anlaufpraxis KVSH
+              </p>
+              <p className="text-xs text-muted-foreground">
+                (in der Paracelsus Klinik Henstedt-Ulzburg)
+              </p>
+              <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
+                <li>Mo + Di + Do: 19:00–21:00 Uhr</li>
+                <li>Mi + Fr: 17:00–21:00 Uhr</li>
+                <li>Sa + So + Feiertage: 10:00–13:00 Uhr und 17:00–21:00 Uhr</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
 

@@ -75,7 +75,7 @@ function IndexPage() {
           <InfoCard
             icon={<PhoneIcon />}
             title="Terminvereinbarung"
-            description="Rufen Sie uns an oder vereinbaren Sie online einen Termin."
+            description="Rufen Sie uns an und vereinbaren Sie einen Termin."
             link="/kontakt"
             linkText="Kontakt"
           />

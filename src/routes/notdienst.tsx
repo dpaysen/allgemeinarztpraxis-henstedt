@@ -26,38 +26,73 @@ function NotdienstPage() {
         </p>
       </div>
 
-      <div className="mt-12 grid gap-8 lg:grid-cols-2">
-        {/* Notruf 112 */}
-        <div className="rounded-xl bg-card p-6 ring-1 ring-border">
-          <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-destructive/10">
-              <svg className="h-6 w-6 text-destructive" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
-              </svg>
+      <div className="mt-12 flex flex-col gap-8 lg:flex-row">
+        {/* Linke Spalte */}
+        <div className="flex flex-1 flex-col gap-8">
+          {/* Notruf 112 */}
+          <div className="flex-1 rounded-xl bg-card p-6 ring-1 ring-border">
+            <div className="flex items-center gap-3">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-destructive/10">
+                <svg className="h-6 w-6 text-destructive" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+                </svg>
+              </div>
+              <h2 className="text-lg font-semibold text-foreground">
+                Lebensbedrohliche Notfälle
+              </h2>
             </div>
-            <h2 className="text-lg font-semibold text-foreground">
-              Lebensbedrohliche Notfälle
-            </h2>
+            <p className="mt-4 text-sm text-muted-foreground">
+              Bei lebensbedrohlichen Zuständen wie schweren Verletzungen, Brustschmerzen,
+              Atemnot oder Bewusstlosigkeit wählen Sie sofort den Notruf:
+            </p>
+            <div className="mt-4">
+              <a
+                href="tel:112"
+                className="inline-flex items-center justify-center rounded-lg bg-destructive px-6 py-3 text-base font-semibold text-white transition-colors hover:bg-red-700"
+              >
+                <svg className="mr-2 h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-1.024-.73-1.907-1.736-2.085l-5.29-.882a1.875 1.875 0 00-2.097 1.185l-.353 1.06a1.125 1.125 0 01-1.27.633L8.89 17.31a15.032 15.032 0 01-5.29-5.29l1.507-1.073a1.125 1.125 0 01.633-1.27l1.06-.353a1.875 1.875 0 001.185-2.097l-.882-5.29A2.25 2.25 0 001.623 4.5H.75A2.25 2.25 0 00-1.5 6.75v.75z" />
+                </svg>
+                Notruf 112
+              </a>
+            </div>
           </div>
-          <p className="mt-4 text-sm text-muted-foreground">
-            Bei lebensbedrohlichen Zuständen wie schweren Verletzungen, Brustschmerzen,
-            Atemnot oder Bewusstlosigkeit wählen Sie sofort den Notruf:
-          </p>
-          <div className="mt-4">
-            <a
-              href="tel:112"
-              className="inline-flex items-center justify-center rounded-lg bg-destructive px-6 py-3 text-base font-semibold text-white transition-colors hover:bg-red-700"
-            >
-              <svg className="mr-2 h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-1.024-.73-1.907-1.736-2.085l-5.29-.882a1.875 1.875 0 00-2.097 1.185l-.353 1.06a1.125 1.125 0 01-1.27.633L8.89 17.31a15.032 15.032 0 01-5.29-5.29l1.507-1.073a1.125 1.125 0 01.633-1.27l1.06-.353a1.875 1.875 0 001.185-2.097l-.882-5.29A2.25 2.25 0 001.623 4.5H.75A2.25 2.25 0 00-1.5 6.75v.75z" />
-              </svg>
-              Notruf 112
-            </a>
+
+          {/* Giftnotruf */}
+          <div className="flex-1 rounded-xl bg-card p-6 ring-1 ring-border">
+            <div className="flex items-center gap-3">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-amber-100">
+                <svg className="h-6 w-6 text-amber-700" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
+                </svg>
+              </div>
+              <h2 className="text-lg font-semibold text-foreground">
+                Vergiftungsnotfall
+              </h2>
+            </div>
+            <p className="mt-4 text-sm text-muted-foreground">
+              Bei Verdacht auf eine akute Vergiftung (z. B. durch Medikamente, Chemikalien oder Pflanzen)
+              wenden Sie sich umgehend an die Giftnotruf-Zentrale:
+            </p>
+            <div className="mt-4">
+              <a
+                href="tel:03019240"
+                className="inline-flex items-center justify-center rounded-lg bg-amber-600 px-6 py-3 text-base font-semibold text-white transition-colors hover:bg-amber-700"
+              >
+                <svg className="mr-2 h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-1.024-.73-1.907-1.736-2.085l-5.29-.882a1.875 1.875 0 00-2.097 1.185l-.353 1.06a1.125 1.125 0 01-1.27.633L8.89 17.31a15.032 15.032 0 01-5.29-5.29l1.507-1.073a1.125 1.125 0 01.633-1.27l1.06-.353a1.875 1.875 0 001.185-2.097l-.882-5.29A2.25 2.25 0 001.623 4.5H.75A2.25 2.25 0 00-1.5 6.75v.75z" />
+                </svg>
+                030 19240
+              </a>
+            </div>
+            <p className="mt-3 text-xs text-muted-foreground">
+              Giftnotruf der Charité Berlin — bundesweit erreichbar, rund um die Uhr.
+            </p>
           </div>
         </div>
 
         {/* Ärztlicher Bereitschaftsdienst */}
-        <div className="rounded-xl bg-card p-6 ring-1 ring-border">
+        <div className="flex-1 rounded-xl bg-card p-6 ring-1 ring-border">
           <div className="flex items-center gap-3">
             <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
               <svg className="h-6 w-6 text-primary" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
@@ -122,38 +157,6 @@ function NotdienstPage() {
               </ul>
             </div>
           </div>
-        </div>
-
-        {/* Giftnotruf */}
-        <div className="rounded-xl bg-card p-6 ring-1 ring-border">
-          <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-amber-100">
-              <svg className="h-6 w-6 text-amber-700" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
-              </svg>
-            </div>
-            <h2 className="text-lg font-semibold text-foreground">
-              Vergiftungsnotfall
-            </h2>
-          </div>
-          <p className="mt-4 text-sm text-muted-foreground">
-            Bei Verdacht auf eine akute Vergiftung (z. B. durch Medikamente, Chemikalien oder Pflanzen)
-            wenden Sie sich umgehend an die Giftnotruf-Zentrale:
-          </p>
-          <div className="mt-4">
-            <a
-              href="tel:03019240"
-              className="inline-flex items-center justify-center rounded-lg bg-amber-600 px-6 py-3 text-base font-semibold text-white transition-colors hover:bg-amber-700"
-            >
-              <svg className="mr-2 h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-1.024-.73-1.907-1.736-2.085l-5.29-.882a1.875 1.875 0 00-2.097 1.185l-.353 1.06a1.125 1.125 0 01-1.27.633L8.89 17.31a15.032 15.032 0 01-5.29-5.29l1.507-1.073a1.125 1.125 0 01.633-1.27l1.06-.353a1.875 1.875 0 001.185-2.097l-.882-5.29A2.25 2.25 0 001.623 4.5H.75A2.25 2.25 0 00-1.5 6.75v.75z" />
-              </svg>
-              030 19240
-            </a>
-          </div>
-          <p className="mt-3 text-xs text-muted-foreground">
-            Giftnotruf der Charité Berlin — bundesweit erreichbar, rund um die Uhr.
-          </p>
         </div>
       </div>
 

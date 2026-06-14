@@ -164,15 +164,15 @@ function Footer() {
               <p>Maurepasstr. 74</p>
               <p>24558 Henstedt-Ulzburg</p>
               <p>
-                Tel:{" "}
+                Tel.:{" "}
                 <a href="tel:+4941935029990" className="underline underline-offset-4 transition-colors hover:text-foreground">
                   04193 5029990
                 </a>
               </p>
               <p>
                 Fax:{" "}
-                <a href="tel:+4941935029991" className="underline underline-offset-4 transition-colors hover:text-foreground">
-                  04193 5029991
+                <a href="tel:+4941935029999" className="underline underline-offset-4 transition-colors hover:text-foreground">
+                  04193 5029999
                 </a>
               </p>
               <p>

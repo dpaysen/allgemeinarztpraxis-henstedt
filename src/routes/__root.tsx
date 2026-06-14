@@ -11,6 +11,7 @@ import { useEffect, type ReactNode, useState } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import praxisLogo from "../assets/praxis-logo.gif.asset.json";
 
 /* ---------- Navigation ---------- */
 function Navigation() {
@@ -30,17 +31,7 @@ function Navigation() {
           to="/"
           className="flex items-center gap-2 text-lg font-semibold tracking-tight text-foreground"
         >
-          <svg
-            className="h-7 w-7 text-primary"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-          </svg>
+          <img src={praxisLogo.url} alt="Praxis-Logo" className="h-8 w-auto" />
           Allgemeinarztpraxis Henstedt
         </Link>
 
@@ -124,17 +115,7 @@ function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 text-lg font-semibold text-foreground">
-              <svg
-                className="h-6 w-6 text-primary"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-              </svg>
+              <img src={praxisLogo.url} alt="Praxis-Logo" className="h-7 w-auto" />
               Allgemeinarztpraxis Henstedt
             </div>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">

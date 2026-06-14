@@ -22,6 +22,7 @@ function Navigation() {
     { to: "/leistungen", label: "Leistungen" },
     { to: "/team", label: "Team" },
     { to: "/kontakt", label: "Kontakt" },
+    { to: "/notdienst", label: "Notdienst" },
   ];
 
   return (

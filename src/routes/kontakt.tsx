@@ -58,15 +58,15 @@ function KontaktPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-1.024-.73-1.907-1.736-2.085l-5.29-.882a1.875 1.875 0 00-2.097 1.185l-.353 1.06a1.125 1.125 0 01-1.27.633L8.89 17.31a15.032 15.032 0 01-5.29-5.29l1.507-1.073a1.125 1.125 0 01.633-1.27l1.06-.353a1.875 1.875 0 001.185-2.097l-.882-5.29A2.25 2.25 0 001.623 4.5H.75A2.25 2.25 0 00-1.5 6.75v.75z" />
                 </svg>
                 <a href="tel:+4941935029990" className="underline underline-offset-4 transition-colors hover:text-foreground">
-                  04193 5029990
+                  Tel.: 04193 5029990
                 </a>
               </p>
               <p className="flex items-center gap-3">
                 <svg className="h-5 w-5 shrink-0 text-primary" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-1.024-.73-1.907-1.736-2.085l-5.29-.882a1.875 1.875 0 00-2.097 1.185l-.353 1.06a1.125 1.125 0 01-1.27.633L8.89 17.31a15.032 15.032 0 01-5.29-5.29l1.507-1.073a1.125 1.125 0 01.633-1.27l1.06-.353a1.875 1.875 0 001.185-2.097l-.882-5.29A2.25 2.25 0 001.623 4.5H.75A2.25 2.25 0 00-1.5 6.75v.75z" />
                 </svg>
-                <a href="tel:+4941935029991" className="underline underline-offset-4 transition-colors hover:text-foreground">
-                  Fax: 04193 5029991
+                <a href="tel:+4941935029999" className="underline underline-offset-4 transition-colors hover:text-foreground">
+                  Fax: 04193 5029999
                 </a>
               </p>
               <p className="flex items-center gap-3">

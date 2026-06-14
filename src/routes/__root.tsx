@@ -31,7 +31,12 @@ function Navigation() {
           to="/"
           className="flex items-center gap-2 text-lg font-semibold tracking-tight text-foreground"
         >
-          <img src={praxisLogo.url} alt="Praxis-Logo" className="h-8 w-auto" />
+          <img
+            src={praxisLogo.url}
+            alt="Praxis-Logo"
+            className="h-8 w-auto"
+            style={{ filter: "brightness(1.15) hue-rotate(-12deg) saturate(0.9)" }}
+          />
           Allgemeinarztpraxis Henstedt
         </Link>
 

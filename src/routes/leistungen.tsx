@@ -43,8 +43,8 @@ const services = [
     description:
       "Moderne Technik für präzise Diagnosen. Mit aktueller Ausstattung unterstützen wir die ärztliche Einschätzung durch aussagekräftige Untersuchungen.",
     items: [
-      "Laboruntersuchungen",
-      "Sonographie (Ultraschall)",
+      "Laboruntersuchungen mit POCT (akut sofort Labor Vorort) ",
+      "Sonographie (Ultraschall Abdomen und Schilddrüse)",
       "Lungenfunktionsprüfung",
       "EKG und Belastungs-EKG (Ergometrie)",
       "Langzeit-EKG",

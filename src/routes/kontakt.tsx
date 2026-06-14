@@ -29,8 +29,7 @@ function KontaktPage() {
           Kontakt
         </h1>
         <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-          Wir freuen uns auf Ihre Nachricht oder Ihren Anruf. Termine können Sie
-          telefonisch oder per E-Mail vereinbaren.
+          Wir freuen uns auf Ihren Anruf. Termine können Sie telefonisch vereinbaren.
         </p>
       </div>
 
@@ -67,14 +66,6 @@ function KontaktPage() {
                 </svg>
                 <a href="tel:+4941935029999" className="underline underline-offset-4 transition-colors hover:text-foreground">
                   Fax: 04193 5029999
-                </a>
-              </p>
-              <p className="flex items-center gap-3">
-                <svg className="h-5 w-5 shrink-0 text-primary" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-                </svg>
-                <a href="mailto:praxis@allgemeinarztpraxis-henstedt.de" className="underline underline-offset-4 transition-colors hover:text-foreground">
-                  praxis@allgemeinarztpraxis-henstedt.de
                 </a>
               </p>
             </address>

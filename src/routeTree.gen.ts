@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as TeamRouteImport } from './routes/team'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as NotdienstRouteImport } from './routes/notdienst'
 import { Route as LeistungenRouteImport } from './routes/leistungen'
 import { Route as KontaktRouteImport } from './routes/kontakt'
 import { Route as IndexRouteImport } from './routes/index'
@@ -23,6 +24,11 @@ const TeamRoute = TeamRouteImport.update({
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NotdienstRoute = NotdienstRouteImport.update({
+  id: '/notdienst',
+  path: '/notdienst',
   getParentRoute: () => rootRouteImport,
 } as any)
 const LeistungenRoute = LeistungenRouteImport.update({
@@ -45,6 +51,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/kontakt': typeof KontaktRoute
   '/leistungen': typeof LeistungenRoute
+  '/notdienst': typeof NotdienstRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/team': typeof TeamRoute
 }
@@ -52,6 +59,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/kontakt': typeof KontaktRoute
   '/leistungen': typeof LeistungenRoute
+  '/notdienst': typeof NotdienstRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/team': typeof TeamRoute
 }
@@ -60,21 +68,36 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/kontakt': typeof KontaktRoute
   '/leistungen': typeof LeistungenRoute
+  '/notdienst': typeof NotdienstRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/team': typeof TeamRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/kontakt' | '/leistungen' | '/sitemap.xml' | '/team'
+  fullPaths:
+    | '/'
+    | '/kontakt'
+    | '/leistungen'
+    | '/notdienst'
+    | '/sitemap.xml'
+    | '/team'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/kontakt' | '/leistungen' | '/sitemap.xml' | '/team'
-  id: '__root__' | '/' | '/kontakt' | '/leistungen' | '/sitemap.xml' | '/team'
+  to: '/' | '/kontakt' | '/leistungen' | '/notdienst' | '/sitemap.xml' | '/team'
+  id:
+    | '__root__'
+    | '/'
+    | '/kontakt'
+    | '/leistungen'
+    | '/notdienst'
+    | '/sitemap.xml'
+    | '/team'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   KontaktRoute: typeof KontaktRoute
   LeistungenRoute: typeof LeistungenRoute
+  NotdienstRoute: typeof NotdienstRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TeamRoute: typeof TeamRoute
 }
@@ -93,6 +116,13 @@ declare module '@tanstack/react-router' {
       path: '/sitemap.xml'
       fullPath: '/sitemap.xml'
       preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/notdienst': {
+      id: '/notdienst'
+      path: '/notdienst'
+      fullPath: '/notdienst'
+      preLoaderRoute: typeof NotdienstRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/leistungen': {
@@ -123,9 +153,20 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   KontaktRoute: KontaktRoute,
   LeistungenRoute: LeistungenRoute,
+  NotdienstRoute: NotdienstRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   TeamRoute: TeamRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}

@@ -187,6 +187,14 @@ function Footer() {
             Arztpraxis — Kein Ersatz für den Notruf 112
           </p>
         </div>
+        <div className="mt-4 text-center">
+          <Link
+            to="/impressum"
+            className="text-xs text-muted-foreground underline underline-offset-4 transition-colors hover:text-foreground"
+          >
+            Impressum und Datenschutz
+          </Link>
+        </div>
       </div>
     </footer>
   );

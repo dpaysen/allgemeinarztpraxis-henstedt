@@ -18,8 +18,6 @@ const hours = [
   { day: "Mittwoch", morning: "8:00 – 12:00", afternoon: "Geschlossen" },
   { day: "Donnerstag", morning: "8:00 – 12:00", afternoon: "15:30 – 18:00" },
   { day: "Freitag", morning: "8:00 – 12:00", afternoon: "Geschlossen" },
-  { day: "Samstag", morning: "Nach Vereinbarung", afternoon: "" },
-  { day: "Sonntag", morning: "Geschlossen", afternoon: "" },
 ];
 
 function KontaktPage() {

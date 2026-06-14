@@ -47,6 +47,8 @@ const services = [
       "Sonographie (Ultraschall)",
       "Lungenfunktionsprüfung",
       "EKG und Belastungs-EKG (Ergometrie)",
+      "Langzeit-EKG",
+      "Langzeit-Blutdruckmessung",
     ],
   },
   {

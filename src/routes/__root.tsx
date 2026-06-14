@@ -175,12 +175,6 @@ function Footer() {
                   04193 5029999
                 </a>
               </p>
-              <p>
-                E-Mail:{" "}
-                <a href="mailto:praxis@allgemeinarztpraxis-henstedt.de" className="underline underline-offset-4 transition-colors hover:text-foreground">
-                  praxis@allgemeinarztpraxis-henstedt.de
-                </a>
-              </p>
             </address>
           </div>
         </div>

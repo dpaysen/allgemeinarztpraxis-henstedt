@@ -123,6 +123,38 @@ function NotdienstPage() {
             </div>
           </div>
         </div>
+
+        {/* Giftnotruf */}
+        <div className="rounded-xl bg-card p-6 ring-1 ring-border">
+          <div className="flex items-center gap-3">
+            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-amber-100">
+              <svg className="h-6 w-6 text-amber-700" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
+              </svg>
+            </div>
+            <h2 className="text-lg font-semibold text-foreground">
+              Vergiftungsnotfall
+            </h2>
+          </div>
+          <p className="mt-4 text-sm text-muted-foreground">
+            Bei Verdacht auf eine akute Vergiftung (z. B. durch Medikamente, Chemikalien oder Pflanzen)
+            wenden Sie sich umgehend an die Giftnotruf-Zentrale:
+          </p>
+          <div className="mt-4">
+            <a
+              href="tel:03019240"
+              className="inline-flex items-center justify-center rounded-lg bg-amber-600 px-6 py-3 text-base font-semibold text-white transition-colors hover:bg-amber-700"
+            >
+              <svg className="mr-2 h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-1.024-.73-1.907-1.736-2.085l-5.29-.882a1.875 1.875 0 00-2.097 1.185l-.353 1.06a1.125 1.125 0 01-1.27.633L8.89 17.31a15.032 15.032 0 01-5.29-5.29l1.507-1.073a1.125 1.125 0 01.633-1.27l1.06-.353a1.875 1.875 0 001.185-2.097l-.882-5.29A2.25 2.25 0 001.623 4.5H.75A2.25 2.25 0 00-1.5 6.75v.75z" />
+              </svg>
+              030 19240
+            </a>
+          </div>
+          <p className="mt-3 text-xs text-muted-foreground">
+            Giftnotruf der Charité Berlin — bundesweit erreichbar, rund um die Uhr.
+          </p>
+        </div>
       </div>
 
       {/* Notfall-Apotheken */}

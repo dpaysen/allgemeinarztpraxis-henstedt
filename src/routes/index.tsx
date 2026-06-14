@@ -68,7 +68,7 @@ function IndexPage() {
           <InfoCard
             icon={<ClockIcon />}
             title="Sprechzeiten"
-            description="Mo–Fr: 8:00–12:00 & 15:00–18:00. Samstag nach Vereinbarung."
+            description="Mo–Fr: 8:00–12:00 & 13:00–15:30. Samstag nach Vereinbarung."
             link="/kontakt"
             linkText="Alle Zeiten"
           />

@@ -1,5 +1,23 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { FlaskConical, Pill, Siren, Smartphone, Stethoscope } from "lucide-react";
+import { FlaskConical, Pill, Siren, Stethoscope } from "lucide-react";
+
+function SmartphoneWithAntenna({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
+      viewBox="0 0 24 24"
+    >
+      <rect x="6" y="3" width="12" height="18" rx="2" />
+      <path d="M15 3V1" />
+      <path d="M9 21h6" />
+    </svg>
+  );
+}
 
 export const Route = createFileRoute("/notdienst")({
   head: () => ({
@@ -49,7 +67,7 @@ function NotdienstPage() {
                 href="tel:112"
                 className="inline-flex items-center justify-center rounded-lg bg-destructive px-6 py-3 text-base font-semibold text-white transition-colors hover:bg-red-700"
               >
-                <Smartphone className="mr-2 h-5 w-5" />
+                <SmartphoneWithAntenna className="mr-2 h-5 w-5" />
                 Notruf 112
               </a>
             </div>
@@ -74,7 +92,7 @@ function NotdienstPage() {
                 href="tel:03019240"
                 className="inline-flex items-center justify-center rounded-lg bg-amber-600 px-6 py-3 text-base font-semibold text-white transition-colors hover:bg-amber-700"
               >
-                <Smartphone className="mr-2 h-5 w-5" />
+                <SmartphoneWithAntenna className="mr-2 h-5 w-5" />
                 030 19240
               </a>
             </div>
@@ -103,7 +121,7 @@ function NotdienstPage() {
               href="tel:116117"
               className="inline-flex items-center justify-center rounded-lg bg-primary px-6 py-3 text-base font-semibold text-primary-foreground transition-colors hover:bg-teal-dark"
             >
-              <Smartphone className="mr-2 h-5 w-5" />
+              <SmartphoneWithAntenna className="mr-2 h-5 w-5" />
               116 117
             </a>
           </div>

@@ -11,7 +11,7 @@ import { useEffect, type ReactNode, useState } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
-import praxisLogo from "../assets/praxis-logo.png.asset.json";
+import praxisLogo from "../assets/praxis-logo.png";
 
 /* ---------- Navigation ---------- */
 function Navigation() {

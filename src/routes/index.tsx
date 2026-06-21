@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { Smartphone } from "lucide-react";
 import heroAsset from "@/assets/praxis-henstedt.jpg.asset.json";
 
 export const Route = createFileRoute("/")({

@@ -33,7 +33,7 @@ function Navigation() {
           className="flex items-center gap-2 text-lg font-semibold tracking-tight text-foreground"
         >
           <img
-            src={praxisLogo.url}
+            src={praxisLogo}
             alt="Praxis-Logo"
             className="h-8 w-auto"
             style={{ filter: "brightness(1.15) hue-rotate(-12deg) saturate(0.9)" }}
@@ -121,7 +121,7 @@ function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 text-lg font-semibold text-foreground">
-              <img src={praxisLogo.url} alt="Praxis-Logo" className="h-7 w-auto" style={{ filter: "brightness(1.15) hue-rotate(-12deg) saturate(0.9)" }} />
+              <img src={praxisLogo} alt="Praxis-Logo" className="h-7 w-auto" style={{ filter: "brightness(1.15) hue-rotate(-12deg) saturate(0.9)" }} />
               Allgemeinarztpraxis Henstedt
             </div>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">

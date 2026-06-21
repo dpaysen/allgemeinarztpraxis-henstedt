@@ -119,10 +119,13 @@ function Footer() {
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 text-lg font-semibold text-foreground">
-              <img src={praxisLogo} alt="Praxis-Logo" className="h-7 w-auto" />
+            <Link
+              to="/"
+              className="flex items-center gap-2 text-lg font-semibold tracking-tight text-foreground"
+            >
+              <img src={praxisLogo} alt="Praxis-Logo" className="h-8 w-auto" />
               Allgemeinarztpraxis Henstedt
-            </div>
+            </Link>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
               Ihre Allgemeinarztpraxis in Henstedt-Ulzburg. Persönliche Betreuung
               und moderne Medizin.

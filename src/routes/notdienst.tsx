@@ -1,5 +1,23 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { FlaskConical, Pill, Siren, Smartphone, Stethoscope } from "lucide-react";
+import { FlaskConical, Pill, Siren, Stethoscope } from "lucide-react";
+
+function SmartphoneWithAntenna({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
+      viewBox="0 0 24 24"
+    >
+      <rect x="6" y="3" width="12" height="18" rx="2" />
+      <path d="M15 3V1" />
+      <path d="M9 21h6" />
+    </svg>
+  );
+}
 
 export const Route = createFileRoute("/notdienst")({
   head: () => ({

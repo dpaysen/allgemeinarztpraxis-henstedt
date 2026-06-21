@@ -92,7 +92,7 @@ function NotdienstPage() {
                 href="tel:03019240"
                 className="inline-flex items-center justify-center rounded-lg bg-amber-600 px-6 py-3 text-base font-semibold text-white transition-colors hover:bg-amber-700"
               >
-                <Smartphone className="mr-2 h-5 w-5" />
+                <SmartphoneWithAntenna className="mr-2 h-5 w-5" />
                 030 19240
               </a>
             </div>
@@ -121,7 +121,7 @@ function NotdienstPage() {
               href="tel:116117"
               className="inline-flex items-center justify-center rounded-lg bg-primary px-6 py-3 text-base font-semibold text-primary-foreground transition-colors hover:bg-teal-dark"
             >
-              <Smartphone className="mr-2 h-5 w-5" />
+              <SmartphoneWithAntenna className="mr-2 h-5 w-5" />
               116 117
             </a>
           </div>

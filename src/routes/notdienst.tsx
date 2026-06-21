@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { FlaskConical, Siren, Smartphone } from "lucide-react";
+import apothekeIcon from "../assets/apotheke-icon.png.asset.json";
 
 export const Route = createFileRoute("/notdienst")({
   head: () => ({

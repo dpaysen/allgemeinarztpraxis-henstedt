@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { FlaskConical, Pill, Siren, Smartphone } from "lucide-react";
+import { FlaskConical, Pill, Siren, Smartphone, Stethoscope } from "lucide-react";
 
 export const Route = createFileRoute("/notdienst")({
   head: () => ({
@@ -88,19 +88,7 @@ function NotdienstPage() {
         <div className="flex-1 rounded-xl bg-card p-6 ring-1 ring-border">
           <div className="flex items-center gap-3">
             <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
-              <svg
-                className="h-6 w-6 text-primary"
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-              >
-                <path d="M12 3v18" />
-                <path d="M9 19c0-3 3-4 3-7s-3-4-3-7" />
-                <path d="M8.5 6c.5-.5 1.5-1 2.5-1s2 .5 2.5 1" />
-              </svg>
+              <Stethoscope className="h-6 w-6 text-primary" />
             </div>
             <h2 className="text-lg font-semibold text-foreground">
               Ärztlicher Bereitschaftsdienst

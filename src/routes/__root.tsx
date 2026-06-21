@@ -123,7 +123,9 @@ function Footer() {
               to="/"
               className="flex items-center gap-2 text-lg font-semibold tracking-tight text-foreground"
             >
-              <img src={praxisLogo} alt="Praxis-Logo" className="h-8 w-auto" />
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
+                <img src={praxisLogo} alt="Praxis-Logo" className="h-7 w-auto" />
+              </div>
               Allgemeinarztpraxis Henstedt
             </Link>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">

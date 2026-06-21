@@ -67,7 +67,7 @@ function NotdienstPage() {
                 href="tel:112"
                 className="inline-flex items-center justify-center rounded-lg bg-destructive px-6 py-3 text-base font-semibold text-white transition-colors hover:bg-red-700"
               >
-                <Smartphone className="mr-2 h-5 w-5" />
+                <SmartphoneWithAntenna className="mr-2 h-5 w-5" />
                 Notruf 112
               </a>
             </div>

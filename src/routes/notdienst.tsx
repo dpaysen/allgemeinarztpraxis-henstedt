@@ -92,10 +92,10 @@ function NotdienstPage() {
               <img
                 src={aesculapIcon.url}
                 alt="Äskulapstab"
-                className="h-6 w-6 object-contain"
+                className="h-8 w-auto object-contain"
                 loading="lazy"
-                width={24}
-                height={24}
+                width={1024}
+                height={1024}
               />
             </div>
             <h2 className="text-lg font-semibold text-foreground">

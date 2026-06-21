@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { FlaskConical, Siren, Smartphone } from "lucide-react";
-import apothekeIcon from "../assets/apotheke-icon.png.asset.json";
+import { FlaskConical, Pill, Siren, Smartphone } from "lucide-react";
 
 export const Route = createFileRoute("/notdienst")({
   head: () => ({
@@ -166,14 +165,7 @@ function NotdienstPage() {
       <div className="mt-8 rounded-xl bg-card p-6 ring-1 ring-border">
         <div className="flex items-center gap-3">
           <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent">
-            <img
-              src={apothekeIcon.url}
-              alt="Apotheken-Symbol"
-              className="h-6 w-6 object-contain"
-              width={48}
-              height={48}
-              loading="lazy"
-            />
+            <Pill className="h-6 w-6 text-accent-foreground" />
           </div>
           <h2 className="text-lg font-semibold text-foreground">
             Notdienst-Apotheken

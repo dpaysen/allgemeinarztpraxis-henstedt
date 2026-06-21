@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { FlaskConical, Pill, Siren, Smartphone } from "lucide-react";
+import { FlaskConical, Pill, Siren, Smartphone, Stethoscope } from "lucide-react";
 
 export const Route = createFileRoute("/notdienst")({
   head: () => ({

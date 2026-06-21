@@ -89,11 +89,14 @@ function NotdienstPage() {
         <div className="flex-1 rounded-xl bg-card p-6 ring-1 ring-border">
           <div className="flex items-center gap-3">
             <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
-              <svg className="h-6 w-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M12 2v20" />
-                <path d="M9 4c0 3 3 5 3 9s-3 5-3 9" />
-                <path d="M15 4c0 3-3 5-3 9s3 5 3 9" />
-              </svg>
+              <img
+                src={aesculapIcon.url}
+                alt="Äskulapstab"
+                className="h-6 w-6 object-contain"
+                loading="lazy"
+                width={24}
+                height={24}
+              />
             </div>
             <h2 className="text-lg font-semibold text-foreground">
               Ärztlicher Bereitschaftsdienst

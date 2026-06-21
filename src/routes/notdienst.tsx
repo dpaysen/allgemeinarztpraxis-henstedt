@@ -63,9 +63,7 @@ function NotdienstPage() {
           <div className="flex-1 rounded-xl bg-card p-6 ring-1 ring-border">
             <div className="flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-amber-100">
-                <svg className="h-6 w-6 text-amber-700" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
-                </svg>
+                <FlaskConical className="h-6 w-6 text-amber-700" />
               </div>
               <h2 className="text-lg font-semibold text-foreground">
                 Vergiftungsnotfall

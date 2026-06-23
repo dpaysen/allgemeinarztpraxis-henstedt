@@ -1,6 +1,25 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Smartphone } from "lucide-react";
 
+function FaxIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
+      viewBox="0 0 24 24"
+    >
+      <path d="M7 3h10v6" />
+      <rect x="3" y="9" width="18" height="9" rx="1" />
+      <rect x="8" y="14" width="8" height="6" rx="1" />
+      <circle cx="6" cy="12.5" r="0.6" fill="currentColor" />
+    </svg>
+  );
+}
+
 export const Route = createFileRoute("/kontakt")({
   head: () => ({
     meta: [
@@ -60,7 +79,7 @@ function KontaktPage() {
                 </a>
               </p>
               <p className="flex items-center gap-3">
-                <Smartphone className="h-5 w-5 shrink-0 text-primary" />
+                <FaxIcon className="h-5 w-5 shrink-0 text-primary" />
                 <a href="tel:+4941935029999" className="underline underline-offset-4 transition-colors hover:text-foreground">
                   Fax: 04193-5029999
                 </a>

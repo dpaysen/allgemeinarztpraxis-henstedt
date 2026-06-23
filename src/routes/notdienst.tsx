@@ -15,6 +15,7 @@ function SmartphoneWithAntenna({ className }: { className?: string }) {
       <rect x="6" y="3" width="12" height="18" rx="2" />
       <path d="M15 3V1" />
       <path d="M9 21h6" />
+      <rect x="8" y="6" width="8" height="10" rx="0.5" />
     </svg>
   );
 }

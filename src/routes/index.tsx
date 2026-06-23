@@ -216,10 +216,10 @@ function IndexPage() {
         aria-label="Aktuelle Nachrichten"
         className="group fixed bottom-6 right-6 z-40 flex h-36 w-36 flex-col items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg ring-4 ring-primary-foreground/40 transition-transform hover:scale-105 sm:h-44 sm:w-44"
       >
-        <span className="text-xs font-semibold uppercase tracking-wider opacity-90 sm:text-sm">
+        <span className="text-[10px] font-semibold uppercase tracking-wider opacity-90 sm:text-xs">
           Aktuell
         </span>
-        <span className="mt-2 px-6 text-center text-sm font-bold leading-tight whitespace-pre-line sm:text-base">
+        <span className="mt-2 px-4 text-center text-[10px] font-bold leading-tight whitespace-pre-line sm:text-xs">
           {`Die Praxis\nist vom 26.-30.09.26\naufgrund\u00a0`}
         </span>
       </Link>

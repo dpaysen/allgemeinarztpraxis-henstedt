@@ -214,7 +214,7 @@ function IndexPage() {
       <Link
         to="/kontakt"
         aria-label="Aktuelle Nachrichten"
-        className="group fixed bottom-6 right-6 z-40 flex h-56 w-56 flex-col items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg ring-4 ring-primary-foreground/40 transition-transform hover:scale-105 sm:h-64 sm:w-64"
+        className="group fixed bottom-6 right-6 z-40 flex h-36 w-36 flex-col items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg ring-4 ring-primary-foreground/40 transition-transform hover:scale-105 sm:h-44 sm:w-44"
       >
         <span className="text-xs font-semibold uppercase tracking-wider opacity-90 sm:text-sm">
           Aktuell

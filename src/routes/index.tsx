@@ -219,8 +219,8 @@ function IndexPage() {
         <span className="text-xs font-semibold uppercase tracking-wider opacity-90 sm:text-sm">
           Aktuell
         </span>
-        <span className="mt-2 px-6 text-center text-sm font-bold leading-tight sm:text-base">
-          Aktuelle Nachrichten
+        <span className="mt-2 px-6 text-center text-sm font-bold leading-tight whitespace-pre-line sm:text-base">
+          {`Die Praxis\nist vom 26.-30.09.26\naufgrund\u00a0`}
         </span>
       </Link>
     </>

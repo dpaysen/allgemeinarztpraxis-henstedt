@@ -209,6 +209,20 @@ function IndexPage() {
           </a>
         </div>
       </section>
+
+      {/* News Bubble — fixed bottom right */}
+      <Link
+        to="/kontakt"
+        aria-label="Aktuelle Nachrichten"
+        className="group fixed bottom-6 right-6 z-40 flex h-28 w-28 flex-col items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg ring-4 ring-primary-foreground/40 transition-transform hover:scale-105 sm:h-32 sm:w-32"
+      >
+        <span className="text-[10px] font-semibold uppercase tracking-wider opacity-90">
+          Aktuell
+        </span>
+        <span className="mt-1 px-3 text-center text-xs font-bold leading-tight sm:text-sm">
+          Aktuelle Nachrichten
+        </span>
+      </Link>
     </>
   );
 }

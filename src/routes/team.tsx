@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import doctorImage from "@/assets/doctor-portrait.jpg";
+import teamFoto from "@/assets/team-foto.jpg";
 
 export const Route = createFileRoute("/team")({
   head: () => ({
@@ -44,7 +45,20 @@ const team = [
 
 function TeamPage() {
   return (
-    <div className="mx-auto max-w-6xl px-6 py-16">
+    <>
+      {/* Full-width Team photo */}
+      <section className="w-full">
+        <img
+          src={teamFoto}
+          alt="Das Team der Allgemeinarztpraxis Henstedt"
+          className="h-64 w-full object-cover sm:h-80 md:h-[420px] lg:h-[480px]"
+          width={1920}
+          height={768}
+          loading="lazy"
+        />
+      </section>
+
+      <div className="mx-auto max-w-6xl px-6 py-16">
       {/* Header */}
       <div className="text-center">
         <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
@@ -135,6 +149,7 @@ function TeamPage() {
           ))}
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 }

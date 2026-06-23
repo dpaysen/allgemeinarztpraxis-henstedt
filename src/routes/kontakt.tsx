@@ -1,5 +1,22 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Smartphone } from "lucide-react";
+function SmartphoneWithAntenna({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
+      viewBox="0 0 24 24"
+    >
+      <rect x="6" y="3" width="12" height="18" rx="2" />
+      <path d="M15 3V1" />
+      <path d="M9 21h6" />
+      <rect x="8" y="6" width="8" height="10" rx="0.5" />
+    </svg>
+  );
+}
 
 function FaxIcon({ className }: { className?: string }) {
   return (
@@ -73,7 +90,7 @@ function KontaktPage() {
                 </span>
               </p>
               <p className="flex items-center gap-3">
-                <Smartphone className="h-5 w-5 shrink-0 text-primary" />
+                <SmartphoneWithAntenna className="h-5 w-5 shrink-0 text-primary" />
                 <a href="tel:+4941935029990" className="underline underline-offset-4 transition-colors hover:text-foreground">
                   Telefon: 04193-5029990
                 </a>

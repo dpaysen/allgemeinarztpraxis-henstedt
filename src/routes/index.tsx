@@ -1,5 +1,4 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Smartphone } from "lucide-react";
 import heroAsset from "@/assets/praxis-henstedt.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
@@ -258,7 +257,20 @@ function ClockIcon() {
 
 function PhoneIcon() {
   return (
-    <Smartphone className="h-5 w-5" />
+    <svg
+      className="h-5 w-5"
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
+      viewBox="0 0 24 24"
+    >
+      <rect x="6" y="3" width="12" height="18" rx="2" />
+      <path d="M15 3V1" />
+      <path d="M9 21h6" />
+      <rect x="8" y="6" width="8" height="10" rx="0.5" />
+    </svg>
   );
 }
 

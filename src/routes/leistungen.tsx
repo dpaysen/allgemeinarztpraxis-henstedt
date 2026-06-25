@@ -101,7 +101,7 @@ function LeistungenPage() {
         {services.map((service, idx) => (
           <div
             key={service.title}
-            className="rounded-xl bg-card p-6 ring-1 ring-border transition-shadow hover:shadow-md"
+            className={`rounded-xl bg-card p-6 ring-1 ring-border transition-shadow hover:shadow-md ${idx === 4 ? "sm:col-span-2 sm:mx-auto sm:w-1/2" : ""}`}
           >
             <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-lg bg-sage/30 text-primary">
               {idx === 4 ? (

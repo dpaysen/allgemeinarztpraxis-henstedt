@@ -161,6 +161,13 @@ function LeistungenPage() {
                     maskSize: "contain",
                   }}
                 />
+              ) : idx === 1 ? (
+                <svg className="h-10 w-10" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
+                  {/* Anatomische Lunge */}
+                  <path d="M12 4v10" />
+                  <path d="M9 6.5c-.3 1.2-.9 2.2-1.7 3-.9.9-2 1.6-2.7 2.7-.8 1.2-1.1 2.6-1.1 4 0 1.4.4 2.8 1.4 3.5.9.7 2.2.6 3.1-.1.9-.7 1.4-1.8 1.6-2.9.3-1.6.4-3.2.4-4.8V6.5C10.5 5.7 9.7 5.4 9 6.5z" />
+                  <path d="M15 6.5c.3 1.2.9 2.2 1.7 3 .9.9 2 1.6 2.7 2.7.8 1.2 1.1 2.6 1.1 4 0 1.4-.4 2.8-1.4 3.5-.9.7-2.2.6-3.1-.1-.9-.7-1.4-1.8-1.6-2.9-.3-1.6-.4-3.2-.4-4.8V6.5C13.5 5.7 14.3 5.4 15 6.5z" />
+                </svg>
               ) : (
                 <svg className="h-10 w-10" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />

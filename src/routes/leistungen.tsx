@@ -121,6 +121,12 @@ function LeistungenPage() {
                   <path d="M7 17h10" />
                   <path d="M7.5 19.5h9" />
                 </svg>
+              ) : idx === 3 ? (
+                <svg className="h-10 w-10" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
+                  {/* Bluttropfen */}
+                  <path d="M12 3.5c0 0 6 6.2 6 10.5a6 6 0 11-12 0c0-4.3 6-10.5 6-10.5z" />
+                  <path d="M9 14.5c0 1.7 1.3 3 3 3" />
+                </svg>
               ) : idx === 4 ? (
                 <svg className="h-10 w-10" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
                   {/* Feuerwehr-Atemschutzmaske (Vollmaske) */}

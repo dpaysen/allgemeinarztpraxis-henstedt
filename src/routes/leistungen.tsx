@@ -98,15 +98,23 @@ function LeistungenPage() {
 
       {/* Services grid */}
       <div className="mt-12 grid gap-6 sm:grid-cols-2">
-        {services.map((service) => (
+        {services.map((service, idx) => (
           <div
             key={service.title}
             className="rounded-xl bg-card p-6 ring-1 ring-border transition-shadow hover:shadow-md"
           >
             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-sage/30 text-primary">
-              <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
+              {idx === 4 ? (
+                <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M7 9c0-1.1.9-2 2-2h6c1.1 0 2 .9 2 2v3a5 5 0 01-5 5h-0a5 5 0 01-5-5V9z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M7 10H4M17 10h3M7 13H4M17 13h3" />
+                  <circle cx="12" cy="12" r="1.2" />
+                </svg>
+              ) : (
+                <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              )}
             </div>
             <h2 className="mt-4 text-lg font-semibold text-foreground">
               {service.title}

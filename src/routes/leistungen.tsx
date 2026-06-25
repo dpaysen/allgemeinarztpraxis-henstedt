@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import schallkopfAsset from "@/assets/schallkopf.png.asset.json";
+import maskeAsset from "@/assets/maske.png.asset.json";
 
 export const Route = createFileRoute("/leistungen")({
   head: () => ({
@@ -128,22 +129,21 @@ function LeistungenPage() {
                   <path d="M9 14.5c0 1.7 1.3 3 3 3" />
                 </svg>
               ) : idx === 4 ? (
-                <svg className="h-10 w-10" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
-                  {/* Feuerwehr-Atemschutzmaske (Vollmaske) */}
-                  {/* Bänderung */}
-                  <path d="M4 7l3 1.5" />
-                  <path d="M4 12h2.5" />
-                  <path d="M4 17l3 -1.5" />
-                  <path d="M20 7l-3 1.5" />
-                  <path d="M20 12h-2.5" />
-                  <path d="M20 17l-3 -1.5" />
-                  {/* Maskenkörper */}
-                  <path d="M12 3.5c3.2 0 5.5 2.2 5.5 5.3v3.4c0 1.6-.6 3-1.7 4l-1.6 1.5c-.6.5-1.4.8-2.2.8s-1.6-.3-2.2-.8l-1.6-1.5c-1.1-1-1.7-2.4-1.7-4V8.8C6.5 5.7 8.8 3.5 12 3.5z" />
-                  {/* Sichtscheibe */}
-                  <path d="M9 8.5c0-.6.5-1 1-1h4c.5 0 1 .4 1 1v2.2c0 .5-.4 1-1 1h-4c-.6 0-1-.5-1-1V8.5z" />
-                  {/* Atemfilter / Regulator */}
-                  <circle cx="12" cy="15.2" r="1.5" />
-                </svg>
+                <span
+                  aria-label="Atemschutzmaske"
+                  role="img"
+                  className="h-12 w-12 bg-primary"
+                  style={{
+                    WebkitMaskImage: `url(${maskeAsset.url})`,
+                    maskImage: `url(${maskeAsset.url})`,
+                    WebkitMaskRepeat: "no-repeat",
+                    maskRepeat: "no-repeat",
+                    WebkitMaskPosition: "center",
+                    maskPosition: "center",
+                    WebkitMaskSize: "contain",
+                    maskSize: "contain",
+                  }}
+                />
               ) : (
                 <svg className="h-10 w-10" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />

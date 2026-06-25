@@ -101,8 +101,39 @@ function LeistungenPage() {
         </p>
       </div>
 
+      {/* EKG strip */}
+      <div className="relative mt-10 h-16 w-full overflow-hidden bg-background">
+        <style>{`
+          @keyframes ekg-scroll {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+          }
+          .ekg-track { animation: ekg-scroll 8s linear infinite; }
+        `}</style>
+        <div className="ekg-track flex h-full w-[200%]">
+          {[0, 1].map((i) => (
+            <svg
+              key={i}
+              viewBox="0 0 600 64"
+              preserveAspectRatio="none"
+              className="h-full w-1/2 shrink-0 text-primary"
+              aria-hidden="true"
+            >
+              <path
+                d="M0 32 L60 32 Q72 22 84 32 L100 32 L104 36 L108 4 L112 60 L116 32 L140 32 Q155 22 170 32 L200 32 L260 32 Q272 22 284 32 L300 32 L304 36 L308 4 L312 60 L316 32 L340 32 Q355 22 370 32 L400 32 L460 32 Q472 22 484 32 L500 32 L504 36 L508 4 L512 60 L516 32 L540 32 Q555 22 570 32 L600 32"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.8"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          ))}
+        </div>
+      </div>
+
       {/* Services grid */}
-      <div className="mt-12 grid gap-6 sm:grid-cols-2">
+      <div className="mt-6 grid gap-6 sm:grid-cols-2">
         {services.map((service, idx) => (
           <div
             key={service.title}

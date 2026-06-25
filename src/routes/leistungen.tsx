@@ -106,19 +106,20 @@ function LeistungenPage() {
             <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-lg bg-sage/30 text-primary">
               {idx === 4 ? (
                 <svg className="h-10 w-10" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
-                  {/* Feuerwehr-Leiterwagen */}
-                  <path d="M2 17h14" />
-                  <rect x="2" y="11" width="9" height="6" rx="1" />
-                  <path d="M11 13h5l3 2v2" />
-                  <circle cx="6" cy="18.5" r="1.5" />
-                  <circle cx="16" cy="18.5" r="1.5" />
-                  {/* Leiter */}
-                  <path d="M5 11l10-7" />
-                  <path d="M7 12l10-7" />
-                  <path d="M6 10.2l2 1.4" />
-                  <path d="M8.5 8.5l2 1.4" />
-                  <path d="M11 6.8l2 1.4" />
-                  <path d="M13.5 5l2 1.4" />
+                  {/* Feuerwehr-Atemschutzmaske (Vollmaske) */}
+                  {/* Bänderung */}
+                  <path d="M4 7l3 1.5" />
+                  <path d="M4 12h2.5" />
+                  <path d="M4 17l3 -1.5" />
+                  <path d="M20 7l-3 1.5" />
+                  <path d="M20 12h-2.5" />
+                  <path d="M20 17l-3 -1.5" />
+                  {/* Maskenkörper */}
+                  <path d="M12 3.5c3.2 0 5.5 2.2 5.5 5.3v3.4c0 1.6-.6 3-1.7 4l-1.6 1.5c-.6.5-1.4.8-2.2.8s-1.6-.3-2.2-.8l-1.6-1.5c-1.1-1-1.7-2.4-1.7-4V8.8C6.5 5.7 8.8 3.5 12 3.5z" />
+                  {/* Sichtscheibe */}
+                  <path d="M9 8.5c0-.6.5-1 1-1h4c.5 0 1 .4 1 1v2.2c0 .5-.4 1-1 1h-4c-.6 0-1-.5-1-1V8.5z" />
+                  {/* Atemfilter / Regulator */}
+                  <circle cx="12" cy="15.2" r="1.5" />
                 </svg>
               ) : (
                 <svg className="h-10 w-10" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">

@@ -104,7 +104,20 @@ function LeistungenPage() {
             className={`rounded-xl bg-card p-6 ring-1 ring-border transition-shadow hover:shadow-md ${idx === 4 ? "sm:col-span-2 sm:mx-auto sm:w-1/2" : ""}`}
           >
             <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-lg bg-sage/30 text-primary">
-              {idx === 4 ? (
+              {idx === 2 ? (
+                <svg className="h-10 w-10" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
+                  {/* Sonographie-Schallkopf */}
+                  {/* Griff */}
+                  <path d="M9 3h6a1 1 0 011 1v8a1 1 0 01-1 1H9a1 1 0 01-1-1V4a1 1 0 011-1z" />
+                  {/* Kabel */}
+                  <path d="M12 3V1.5" />
+                  {/* Kontaktfläche / Sonde */}
+                  <path d="M8 13h8l-1 2H9l-1-2z" />
+                  {/* Ultraschallwellen */}
+                  <path d="M9 17.5c1-.8 2-1.2 3-1.2s2 .4 3 1.2" />
+                  <path d="M8 20c1.3-1.1 2.6-1.7 4-1.7s2.7.6 4 1.7" />
+                </svg>
+              ) : idx === 4 ? (
                 <svg className="h-10 w-10" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
                   {/* Feuerwehr-Atemschutzmaske (Vollmaske) */}
                   {/* Bänderung */}

@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import schallkopfAsset from "@/assets/schallkopf.png.asset.json";
 import maskeAsset from "@/assets/maske.png.asset.json";
 import spritzeAsset from "@/assets/spritze.png.asset.json";
+import laborAsset from "@/assets/labor.png.asset.json";
 
 export const Route = createFileRoute("/leistungen")({
   head: () => ({
@@ -124,11 +125,21 @@ function LeistungenPage() {
                   }}
                 />
               ) : idx === 3 ? (
-                <svg className="h-10 w-10" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
-                  {/* Bluttropfen */}
-                  <path d="M12 3.5c0 0 6 6.2 6 10.5a6 6 0 11-12 0c0-4.3 6-10.5 6-10.5z" />
-                  <path d="M9 14.5c0 1.7 1.3 3 3 3" />
-                </svg>
+                <span
+                  aria-label="Labor"
+                  role="img"
+                  className="h-12 w-12 bg-primary"
+                  style={{
+                    WebkitMaskImage: `url(${laborAsset.url})`,
+                    maskImage: `url(${laborAsset.url})`,
+                    WebkitMaskRepeat: "no-repeat",
+                    maskRepeat: "no-repeat",
+                    WebkitMaskPosition: "center",
+                    maskPosition: "center",
+                    WebkitMaskSize: "contain",
+                    maskSize: "contain",
+                  }}
+                />
               ) : idx === 4 ? (
                 <span
                   aria-label="Atemschutzmaske"

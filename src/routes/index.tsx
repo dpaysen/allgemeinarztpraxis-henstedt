@@ -79,10 +79,10 @@ function IndexPage() {
             aria-hidden="true"
           >
             <path
-              d="M0 32 L80 32 L95 32 L100 20 L108 44 L116 8 L124 56 L132 32 L200 32 L215 32 L220 22 L228 42 L236 12 L244 52 L252 32 L320 32 L335 32 L340 20 L348 44 L356 8 L364 56 L372 32 L440 32 L455 32 L460 22 L468 42 L476 12 L484 52 L492 32 L600 32"
+              d="M0 32 L60 32 Q72 22 84 32 L100 32 L104 36 L108 4 L112 60 L116 32 L140 32 Q155 22 170 32 L200 32 L260 32 Q272 22 284 32 L300 32 L304 36 L308 4 L312 60 L316 32 L340 32 Q355 22 370 32 L400 32 L460 32 Q472 22 484 32 L500 32 L504 36 L508 4 L512 60 L516 32 L540 32 Q555 22 570 32 L600 32"
               fill="none"
               stroke="currentColor"
-              strokeWidth="2"
+              strokeWidth="1.8"
               strokeLinecap="round"
               strokeLinejoin="round"
             />
@@ -94,10 +94,10 @@ function IndexPage() {
             aria-hidden="true"
           >
             <path
-              d="M0 32 L80 32 L95 32 L100 20 L108 44 L116 8 L124 56 L132 32 L200 32 L215 32 L220 22 L228 42 L236 12 L244 52 L252 32 L320 32 L335 32 L340 20 L348 44 L356 8 L364 56 L372 32 L440 32 L455 32 L460 22 L468 42 L476 12 L484 52 L492 32 L600 32"
+              d="M0 32 L60 32 Q72 22 84 32 L100 32 L104 36 L108 4 L112 60 L116 32 L140 32 Q155 22 170 32 L200 32 L260 32 Q272 22 284 32 L300 32 L304 36 L308 4 L312 60 L316 32 L340 32 Q355 22 370 32 L400 32 L460 32 Q472 22 484 32 L500 32 L504 36 L508 4 L512 60 L516 32 L540 32 Q555 22 570 32 L600 32"
               fill="none"
               stroke="currentColor"
-              strokeWidth="2"
+              strokeWidth="1.8"
               strokeLinecap="round"
               strokeLinejoin="round"
             />

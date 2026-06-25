@@ -106,7 +106,21 @@ function LeistungenPage() {
           >
             <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-lg bg-sage/30 text-primary">
               {idx === 2 ? (
-                <img src={schallkopfAsset.url} alt="Sonographie-Schallkopf" className="h-14 w-14 object-contain" />
+                <span
+                  aria-label="Sonographie-Schallkopf"
+                  role="img"
+                  className="h-14 w-14 bg-primary"
+                  style={{
+                    WebkitMaskImage: `url(${schallkopfAsset.url})`,
+                    maskImage: `url(${schallkopfAsset.url})`,
+                    WebkitMaskRepeat: "no-repeat",
+                    maskRepeat: "no-repeat",
+                    WebkitMaskPosition: "center",
+                    maskPosition: "center",
+                    WebkitMaskSize: "contain",
+                    maskSize: "contain",
+                  }}
+                />
               ) : idx === 3 ? (
                 <svg className="h-10 w-10" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
                   {/* Bluttropfen */}

@@ -103,9 +103,9 @@ function LeistungenPage() {
             key={service.title}
             className="rounded-xl bg-card p-6 ring-1 ring-border transition-shadow hover:shadow-md"
           >
-            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-sage/30 text-primary">
+            <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-lg bg-sage/30 text-primary">
               {idx === 4 ? (
-                <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
+                <svg className="h-10 w-10" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
                   {/* Feuerwehr-Leiterwagen */}
                   <path d="M2 17h14" />
                   <rect x="2" y="11" width="9" height="6" rx="1" />
@@ -121,7 +121,7 @@ function LeistungenPage() {
                   <path d="M13.5 5l2 1.4" />
                 </svg>
               ) : (
-                <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+                <svg className="h-10 w-10" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               )}

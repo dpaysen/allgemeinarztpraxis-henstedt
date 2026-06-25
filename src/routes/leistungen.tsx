@@ -106,7 +106,7 @@ function LeistungenPage() {
           >
             <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-lg bg-sage/30 text-primary">
               {idx === 2 ? (
-                <img src={schallkopfAsset.url} alt="Sonographie-Schallkopf" className="h-10 w-10 object-contain" />
+                <img src={schallkopfAsset.url} alt="Sonographie-Schallkopf" className="h-20 w-20 object-contain" />
               ) : idx === 3 ? (
                 <svg className="h-10 w-10" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
                   {/* Bluttropfen */}

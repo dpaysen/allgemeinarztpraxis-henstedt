@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import schallkopfAsset from "@/assets/schallkopf.png.asset.json";
 
 export const Route = createFileRoute("/leistungen")({
   head: () => ({
@@ -105,20 +106,7 @@ function LeistungenPage() {
           >
             <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-lg bg-sage/30 text-primary">
               {idx === 2 ? (
-                <svg className="h-10 w-10" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
-                  {/* Curved/diagonal Sonographie-Schallkopf mit Schallwellen */}
-                  {/* Kabel unten links */}
-                  <path d="M2.5 21l2.5-2.5" />
-                  <rect x="3.2" y="18.2" width="3" height="1.6" rx="0.4" transform="rotate(-45 4.7 19)" />
-                  {/* Schallkopf-Körper (diagonal, bauchig) */}
-                  <path d="M6 18c-1-1-1-2.6 0-3.6L14.4 6c1.6-1.6 4.2-1.6 5.8 0 1.6 1.6 1.6 4.2 0 5.8l-8.4 8.4c-1 1-2.6 1-3.6 0L6 18z" />
-                  {/* Tastenmulde auf dem Griff */}
-                  <rect x="11.3" y="11" width="1.4" height="3" rx="0.7" transform="rotate(-45 12 12.5)" />
-                  {/* Schallwellen (rechts oben) */}
-                  <path d="M19 5.5c.9.9 1.4 2 1.4 3.2" />
-                  <path d="M20.5 4c1.5 1.5 2.3 3.4 2.3 5.4" />
-                  <path d="M22 2.5c2 2 3.2 4.6 3.2 7.4" transform="scale(0.85) translate(3 1)" />
-                </svg>
+                <img src={schallkopfAsset.url} alt="Sonographie-Schallkopf" className="h-10 w-10 object-contain" />
               ) : idx === 3 ? (
                 <svg className="h-10 w-10" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
                   {/* Bluttropfen */}

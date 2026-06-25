@@ -3,6 +3,7 @@ import schallkopfAsset from "@/assets/schallkopf.png.asset.json";
 import maskeAsset from "@/assets/maske.png.asset.json";
 import spritzeAsset from "@/assets/spritze.png.asset.json";
 import laborAsset from "@/assets/labor.png.asset.json";
+import lungeAsset from "@/assets/lunge.png.asset.json";
 
 export const Route = createFileRoute("/leistungen")({
   head: () => ({
@@ -173,12 +174,21 @@ function LeistungenPage() {
                   }}
                 />
               ) : idx === 1 ? (
-                <svg className="h-10 w-10" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
-                  {/* Anatomische Lunge */}
-                  <path d="M12 4v10" />
-                  <path d="M9 6.5c-.3 1.2-.9 2.2-1.7 3-.9.9-2 1.6-2.7 2.7-.8 1.2-1.1 2.6-1.1 4 0 1.4.4 2.8 1.4 3.5.9.7 2.2.6 3.1-.1.9-.7 1.4-1.8 1.6-2.9.3-1.6.4-3.2.4-4.8V6.5C10.5 5.7 9.7 5.4 9 6.5z" />
-                  <path d="M15 6.5c.3 1.2.9 2.2 1.7 3 .9.9 2 1.6 2.7 2.7.8 1.2 1.1 2.6 1.1 4 0 1.4-.4 2.8-1.4 3.5-.9.7-2.2.6-3.1-.1-.9-.7-1.4-1.8-1.6-2.9-.3-1.6-.4-3.2-.4-4.8V6.5C13.5 5.7 14.3 5.4 15 6.5z" />
-                </svg>
+                <span
+                  aria-label="Lunge"
+                  role="img"
+                  className="h-12 w-12 bg-primary"
+                  style={{
+                    WebkitMaskImage: `url(${lungeAsset.url})`,
+                    maskImage: `url(${lungeAsset.url})`,
+                    WebkitMaskRepeat: "no-repeat",
+                    maskRepeat: "no-repeat",
+                    WebkitMaskPosition: "center",
+                    maskPosition: "center",
+                    WebkitMaskSize: "contain",
+                    maskSize: "contain",
+                  }}
+                />
               ) : (
                 <svg className="h-10 w-10" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />

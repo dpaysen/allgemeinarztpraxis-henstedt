@@ -109,7 +109,7 @@ function LeistungenPage() {
                 <span
                   aria-label="Sonographie-Schallkopf"
                   role="img"
-                  className="h-14 w-14 bg-primary"
+                  className="h-14 w-14 bg-primary rotate-[135deg]"
                   style={{
                     WebkitMaskImage: `url(${schallkopfAsset.url})`,
                     maskImage: `url(${schallkopfAsset.url})`,

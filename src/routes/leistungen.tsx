@@ -106,15 +106,19 @@ function LeistungenPage() {
             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-sage/30 text-primary">
               {idx === 4 ? (
                 <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
-                  {/* Druckluftflasche */}
-                  <path d="M6 4.5h4" />
-                  <path d="M7 4.5v2" />
-                  <path d="M9 4.5v2" />
-                  <rect x="5.5" y="6.5" width="5" height="14" rx="2.2" />
-                  <path d="M5.5 10h5" />
-                  {/* Feuerwehr-Atemschutzmaske */}
-                  <path d="M17 8c2 0 3.5 1.8 3.5 4.2 0 2-1 3.8-2.6 4.8l-.4 2c-.1.5-.5.8-1 .8h-3c-.5 0-.9-.3-1-.8l-.4-2c-1.6-1-2.6-2.8-2.6-4.8C9.5 9.8 11 8 13 8h4z" />
-                  <circle cx="15" cy="13" r="1.6" />
+                  {/* Feuerwehr-Leiterwagen */}
+                  <path d="M2 17h14" />
+                  <rect x="2" y="11" width="9" height="6" rx="1" />
+                  <path d="M11 13h5l3 2v2" />
+                  <circle cx="6" cy="18.5" r="1.5" />
+                  <circle cx="16" cy="18.5" r="1.5" />
+                  {/* Leiter */}
+                  <path d="M5 11l10-7" />
+                  <path d="M7 12l10-7" />
+                  <path d="M6 10.2l2 1.4" />
+                  <path d="M8.5 8.5l2 1.4" />
+                  <path d="M11 6.8l2 1.4" />
+                  <path d="M13.5 5l2 1.4" />
                 </svg>
               ) : (
                 <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">

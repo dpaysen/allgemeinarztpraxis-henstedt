@@ -63,7 +63,7 @@ function IndexPage() {
       </section>
 
       {/* EKG strip */}
-      <div className="relative h-16 w-full overflow-hidden border-y border-border bg-card">
+      <div className="relative h-16 w-full overflow-hidden bg-background">
         <style>{`
           @keyframes ekg-scroll {
             from { transform: translateX(0); }

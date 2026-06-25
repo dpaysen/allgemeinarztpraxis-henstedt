@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import schallkopfAsset from "@/assets/schallkopf.png.asset.json";
 import maskeAsset from "@/assets/maske.png.asset.json";
+import spritzeAsset from "@/assets/spritze.png.asset.json";
 
 export const Route = createFileRoute("/leistungen")({
   head: () => ({
@@ -136,6 +137,22 @@ function LeistungenPage() {
                   style={{
                     WebkitMaskImage: `url(${maskeAsset.url})`,
                     maskImage: `url(${maskeAsset.url})`,
+                    WebkitMaskRepeat: "no-repeat",
+                    maskRepeat: "no-repeat",
+                    WebkitMaskPosition: "center",
+                    maskPosition: "center",
+                    WebkitMaskSize: "contain",
+                    maskSize: "contain",
+                  }}
+                />
+              ) : idx === 0 ? (
+                <span
+                  aria-label="Spritze"
+                  role="img"
+                  className="h-12 w-12 bg-primary"
+                  style={{
+                    WebkitMaskImage: `url(${spritzeAsset.url})`,
+                    maskImage: `url(${spritzeAsset.url})`,
                     WebkitMaskRepeat: "no-repeat",
                     maskRepeat: "no-repeat",
                     WebkitMaskPosition: "center",

@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import schallkopfAsset from "@/assets/schallkopf.png.asset.json";
+import schallkopfAsset from "@/assets/ultraschall.png.asset.json";
 import maskeAsset from "@/assets/maske.png.asset.json";
 import spritzeAsset from "@/assets/spritze.png.asset.json";
 import laborAsset from "@/assets/labor.png.asset.json";
@@ -113,7 +113,7 @@ function LeistungenPage() {
                 <span
                   aria-label="Sonographie-Schallkopf"
                   role="img"
-                  className="h-11 w-11 bg-primary rotate-[135deg]"
+                  className="h-12 w-12 bg-primary"
                   style={{
                     WebkitMaskImage: `url(${schallkopfAsset.url})`,
                     maskImage: `url(${schallkopfAsset.url})`,

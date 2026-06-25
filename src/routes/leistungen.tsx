@@ -106,7 +106,8 @@ function LeistungenPage() {
         {services.map((service, idx) => (
           <div
             key={service.title}
-            className={`rounded-xl bg-card p-6 ring-1 ring-border transition-shadow hover:shadow-md ${idx === 4 ? "sm:col-span-2 sm:mx-auto sm:w-1/2" : ""}`}
+            className={`rounded-xl bg-card p-6 ring-1 ring-border transition-shadow hover:shadow-md animate-in fade-in duration-700 fill-mode-backwards ${idx % 2 === 0 ? "slide-in-from-left-16" : "slide-in-from-right-16"} ${idx === 4 ? "sm:col-span-2 sm:mx-auto sm:w-1/2" : ""}`}
+            style={{ animationDelay: `${idx * 120}ms`, animationFillMode: "backwards" }}
           >
             <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-lg bg-sage/30 text-primary">
               {idx === 2 ? (

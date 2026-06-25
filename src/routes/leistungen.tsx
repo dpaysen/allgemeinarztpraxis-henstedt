@@ -119,6 +119,7 @@ function LeistungenPage() {
               className="h-full w-1/2 shrink-0 text-primary"
               aria-hidden="true"
             >
+              <path
                 d="M0 32 L25 32 Q33 27 41 32 L55 32 L58 34 L62 4 L66 60 L70 32 L80 32 Q95 22 110 32 L150 32 L175 32 Q183 27 191 32 L205 32 L208 34 L212 4 L216 60 L220 32 L230 32 Q245 22 260 32 L300 32 L325 32 Q333 27 341 32 L355 32 L358 34 L362 4 L366 60 L370 32 L380 32 Q395 22 410 32 L450 32 L475 32 Q483 27 491 32 L505 32 L508 34 L512 4 L516 60 L520 32 L530 32 Q545 22 560 32 L600 32"
                 fill="none"
                 stroke="currentColor"

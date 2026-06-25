@@ -35,11 +35,11 @@ function IndexPage() {
             <span className="inline-flex items-center rounded-full bg-sage/30 px-3 py-1 text-xs font-medium text-secondary-foreground ring-1 ring-sage/40">
               Allgemeinmedizin & Hausärztliche Versorgung
             </span>
-            <h1 className="mt-6 text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+            <h1 className="mt-6 text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl animate-in fade-in slide-in-from-right-16 duration-700 fill-mode-backwards">
               Da sein, wenn es{" "}
               <span className="text-primary">darauf ankommt</span>
             </h1>
-            <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+            <p className="mt-6 text-lg leading-relaxed text-muted-foreground animate-in fade-in slide-in-from-left-16 duration-700 fill-mode-backwards" style={{ animationDelay: "200ms" }}>
               Willkommen in der Allgemeinarztpraxis Henstedt — Ihrer
               Allgemeinarztpraxis in Henstedt-Ulzburg. Wir bieten Ihnen umfassende hausärztliche
               Versorgung mit persönlicher Betreuung und modernster Medizin.

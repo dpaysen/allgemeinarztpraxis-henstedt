@@ -106,16 +106,20 @@ function LeistungenPage() {
             <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-lg bg-sage/30 text-primary">
               {idx === 2 ? (
                 <svg className="h-10 w-10" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
-                  {/* Sonographie-Schallkopf */}
-                  {/* Griff */}
-                  <path d="M9 3h6a1 1 0 011 1v8a1 1 0 01-1 1H9a1 1 0 01-1-1V4a1 1 0 011-1z" />
+                  {/* Linearschallkopf */}
                   {/* Kabel */}
-                  <path d="M12 3V1.5" />
-                  {/* Kontaktfläche / Sonde */}
-                  <path d="M8 13h8l-1 2H9l-1-2z" />
-                  {/* Ultraschallwellen */}
-                  <path d="M9 17.5c1-.8 2-1.2 3-1.2s2 .4 3 1.2" />
-                  <path d="M8 20c1.3-1.1 2.6-1.7 4-1.7s2.7.6 4 1.7" />
+                  <path d="M12 2v2.5" />
+                  {/* Griff (schmal, länglich) */}
+                  <rect x="9.5" y="4.5" width="5" height="7" rx="1" />
+                  {/* Übergang zur Schallfläche */}
+                  <path d="M8 11.5h8l-1 2H9l-1-2z" />
+                  {/* Lineare Schallfläche (flach, breit) */}
+                  <rect x="6" y="13.5" width="12" height="1.6" rx="0.3" />
+                  {/* Element-Marker auf der Fläche */}
+                  <path d="M8 14.3h.01M10 14.3h.01M12 14.3h.01M14 14.3h.01M16 14.3h.01" />
+                  {/* Schallwellen (planar / parallel) */}
+                  <path d="M7 17h10" />
+                  <path d="M7.5 19.5h9" />
                 </svg>
               ) : idx === 4 ? (
                 <svg className="h-10 w-10" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">

@@ -62,6 +62,49 @@ function IndexPage() {
         </div>
       </section>
 
+      {/* EKG strip */}
+      <div className="relative h-16 w-full overflow-hidden border-y border-border bg-card">
+        <style>{`
+          @keyframes ekg-scroll {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+          }
+          .ekg-track { animation: ekg-scroll 8s linear infinite; }
+        `}</style>
+        <div className="ekg-track flex h-full w-[200%]">
+          <svg
+            viewBox="0 0 600 64"
+            preserveAspectRatio="none"
+            className="h-full w-1/2 shrink-0 text-primary"
+            aria-hidden="true"
+          >
+            <path
+              d="M0 32 L80 32 L95 32 L100 20 L108 44 L116 8 L124 56 L132 32 L200 32 L215 32 L220 22 L228 42 L236 12 L244 52 L252 32 L320 32 L335 32 L340 20 L348 44 L356 8 L364 56 L372 32 L440 32 L455 32 L460 22 L468 42 L476 12 L484 52 L492 32 L600 32"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+          <svg
+            viewBox="0 0 600 64"
+            preserveAspectRatio="none"
+            className="h-full w-1/2 shrink-0 text-primary"
+            aria-hidden="true"
+          >
+            <path
+              d="M0 32 L80 32 L95 32 L100 20 L108 44 L116 8 L124 56 L132 32 L200 32 L215 32 L220 22 L228 42 L236 12 L244 52 L252 32 L320 32 L335 32 L340 20 L348 44 L356 8 L364 56 L372 32 L440 32 L455 32 L460 22 L468 42 L476 12 L484 52 L492 32 L600 32"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </div>
+      </div>
+
       {/* Quick info cards */}
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

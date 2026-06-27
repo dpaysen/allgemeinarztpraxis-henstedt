@@ -102,13 +102,13 @@ function LeistungenPage() {
       </div>
 
       {/* EKG strip */}
-      <div className="relative mt-10 h-16 w-full overflow-hidden bg-background">
+      <div className="relative mt-6 h-32 w-full overflow-hidden bg-background">
         <style>{`
           @keyframes ekg-scroll {
             from { transform: translateX(0); }
             to { transform: translateX(-50%); }
           }
-          .ekg-track { animation: ekg-scroll 8s linear infinite; }
+          .ekg-track { animation: ekg-scroll 10s linear infinite; }
         `}</style>
         <div className="ekg-track flex h-full w-[200%]">
           {[0, 1].map((i) => (
@@ -120,12 +120,13 @@ function LeistungenPage() {
               aria-hidden="true"
             >
               <path
-                d="M0 32 L20 32 Q28 27 36 32 L40 32 L43 34 L46 8 L49 56 L52 32 L55 32 Q67 24 80 32 L100 32 L120 32 Q128 27 136 32 L140 32 L143 34 L146 8 L149 56 L152 32 L155 32 Q167 24 180 32 L200 32 L220 32 Q228 27 236 32 L240 32 L243 34 L246 8 L249 56 L252 32 L255 32 Q267 24 280 32 L300 32 L320 32 Q328 27 336 32 L340 32 L343 34 L346 8 L349 56 L352 32 L355 32 Q367 24 380 32 L400 32 L420 32 Q428 27 436 32 L440 32 L443 34 L446 8 L449 56 L452 32 L455 32 Q467 24 480 32 L500 32 L520 32 Q528 27 536 32 L540 32 L543 34 L546 8 L549 56 L552 32 L555 32 Q567 24 580 32 L600 32"
+                d="M0 32 L20 32 Q27 28 35 32 L42 32 L45 36 L47 2 L49 62 L52 32 L60 32 Q70 24 80 32 L150 32 L170 32 Q177 28 185 32 L192 32 L195 36 L197 2 L199 62 L202 32 L210 32 Q220 24 230 32 L300 32 L320 32 Q327 28 335 32 L342 32 L345 36 L347 2 L349 62 L352 32 L360 32 Q370 24 380 32 L450 32 L470 32 Q477 28 485 32 L492 32 L495 36 L497 2 L499 62 L502 32 L510 32 Q520 24 530 32 L600 32"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth="1.8"
+                strokeWidth="2.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
+                vectorEffect="non-scaling-stroke"
               />
             </svg>
           ))}

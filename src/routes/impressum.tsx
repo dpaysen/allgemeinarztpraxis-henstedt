@@ -82,10 +82,10 @@ function ImpressumPage() {
             href="tel:+4941935029990"
             className="underline underline-offset-4 hover:text-foreground"
           >
-            04193 502999-0
+            04193 5029990
           </a>
         </p>
-        <p>Telefax: 04193 502999-9</p>
+        <p>Telefax: 04193 5029999</p>
         <p>
           E-Mail:{" "}
           <a
